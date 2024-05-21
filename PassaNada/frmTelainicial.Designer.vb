@@ -81,7 +81,7 @@ Partial Class frmTelaInicial
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox1.Location = New System.Drawing.Point(266, 36)
+        Me.PictureBox1.Location = New System.Drawing.Point(266, 35)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(534, 415)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -90,6 +90,7 @@ Partial Class frmTelaInicial
         '
         'btnHistorico
         '
+        Me.btnHistorico.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnHistorico.Image = CType(resources.GetObject("btnHistorico.Image"), System.Drawing.Image)
         Me.btnHistorico.Location = New System.Drawing.Point(7, 280)
         Me.btnHistorico.Name = "btnHistorico"
@@ -101,6 +102,7 @@ Partial Class frmTelaInicial
         '
         'btnMoradores
         '
+        Me.btnMoradores.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMoradores.Image = CType(resources.GetObject("btnMoradores.Image"), System.Drawing.Image)
         Me.btnMoradores.Location = New System.Drawing.Point(7, 66)
         Me.btnMoradores.Name = "btnMoradores"
@@ -112,6 +114,7 @@ Partial Class frmTelaInicial
         '
         'BtnVisitantes
         '
+        Me.BtnVisitantes.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnVisitantes.Image = CType(resources.GetObject("BtnVisitantes.Image"), System.Drawing.Image)
         Me.BtnVisitantes.Location = New System.Drawing.Point(7, 174)
         Me.BtnVisitantes.Name = "BtnVisitantes"
@@ -131,8 +134,9 @@ Partial Class frmTelaInicial
         Me.Controls.Add(Me.btnHistorico)
         Me.Controls.Add(Me.btnMoradores)
         Me.Controls.Add(Me.BtnVisitantes)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmTelaInicial"
-        Me.Text = "Form2"
+        Me.Text = "PassaNada | Tela Inicial"
         Me.MenuStrip2.ResumeLayout(False)
         Me.MenuStrip2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

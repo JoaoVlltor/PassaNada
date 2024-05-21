@@ -68,10 +68,10 @@ Partial Class frmMoradores
         'lblCod
         '
         Me.lblCod.AutoSize = True
-        Me.lblCod.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCod.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCod.Location = New System.Drawing.Point(11, 83)
         Me.lblCod.Name = "lblCod"
-        Me.lblCod.Size = New System.Drawing.Size(32, 15)
+        Me.lblCod.Size = New System.Drawing.Size(31, 15)
         Me.lblCod.TabIndex = 61
         Me.lblCod.Text = "Cod:"
         '
@@ -85,6 +85,7 @@ Partial Class frmMoradores
         '
         'btnBuscar
         '
+        Me.btnBuscar.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBuscar.Location = New System.Drawing.Point(712, 247)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
@@ -102,20 +103,20 @@ Partial Class frmMoradores
         'lblBuscar
         '
         Me.lblBuscar.AutoSize = True
-        Me.lblBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBuscar.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBuscar.Location = New System.Drawing.Point(511, 232)
         Me.lblBuscar.Name = "lblBuscar"
-        Me.lblBuscar.Size = New System.Drawing.Size(48, 15)
+        Me.lblBuscar.Size = New System.Drawing.Size(45, 15)
         Me.lblBuscar.TabIndex = 57
         Me.lblBuscar.Text = "Buscar:"
         '
         'lblEstado
         '
         Me.lblEstado.AutoSize = True
-        Me.lblEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEstado.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEstado.Location = New System.Drawing.Point(511, 177)
         Me.lblEstado.Name = "lblEstado"
-        Me.lblEstado.Size = New System.Drawing.Size(48, 15)
+        Me.lblEstado.Size = New System.Drawing.Size(45, 15)
         Me.lblEstado.TabIndex = 56
         Me.lblEstado.Text = "Estado:"
         '
@@ -140,10 +141,10 @@ Partial Class frmMoradores
         'lblCep
         '
         Me.lblCep.AutoSize = True
-        Me.lblCep.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCep.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCep.Location = New System.Drawing.Point(659, 177)
         Me.lblCep.Name = "lblCep"
-        Me.lblCep.Size = New System.Drawing.Size(34, 15)
+        Me.lblCep.Size = New System.Drawing.Size(30, 15)
         Me.lblCep.TabIndex = 53
         Me.lblCep.Text = "CEP:"
         '
@@ -157,10 +158,10 @@ Partial Class frmMoradores
         'lblCidade
         '
         Me.lblCidade.AutoSize = True
-        Me.lblCidade.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCidade.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCidade.Location = New System.Drawing.Point(308, 177)
         Me.lblCidade.Name = "lblCidade"
-        Me.lblCidade.Size = New System.Drawing.Size(49, 15)
+        Me.lblCidade.Size = New System.Drawing.Size(46, 15)
         Me.lblCidade.TabIndex = 51
         Me.lblCidade.Text = "Cidade:"
         '
@@ -174,10 +175,10 @@ Partial Class frmMoradores
         'lblBairro
         '
         Me.lblBairro.AutoSize = True
-        Me.lblBairro.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBairro.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBairro.Location = New System.Drawing.Point(11, 177)
         Me.lblBairro.Name = "lblBairro"
-        Me.lblBairro.Size = New System.Drawing.Size(43, 15)
+        Me.lblBairro.Size = New System.Drawing.Size(41, 15)
         Me.lblBairro.TabIndex = 49
         Me.lblBairro.Text = "Bairro:"
         '
@@ -191,10 +192,10 @@ Partial Class frmMoradores
         'lblComplemento
         '
         Me.lblComplemento.AutoSize = True
-        Me.lblComplemento.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblComplemento.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblComplemento.Location = New System.Drawing.Point(457, 125)
         Me.lblComplemento.Name = "lblComplemento"
-        Me.lblComplemento.Size = New System.Drawing.Size(88, 15)
+        Me.lblComplemento.Size = New System.Drawing.Size(86, 15)
         Me.lblComplemento.TabIndex = 47
         Me.lblComplemento.Text = "Complemento:"
         '
@@ -208,10 +209,10 @@ Partial Class frmMoradores
         'lblNumero
         '
         Me.lblNumero.AutoSize = True
-        Me.lblNumero.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNumero.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNumero.Location = New System.Drawing.Point(313, 125)
         Me.lblNumero.Name = "lblNumero"
-        Me.lblNumero.Size = New System.Drawing.Size(55, 15)
+        Me.lblNumero.Size = New System.Drawing.Size(54, 15)
         Me.lblNumero.TabIndex = 45
         Me.lblNumero.Text = "Número:"
         '
@@ -225,10 +226,10 @@ Partial Class frmMoradores
         'lblLogradouro
         '
         Me.lblLogradouro.AutoSize = True
-        Me.lblLogradouro.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLogradouro.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLogradouro.Location = New System.Drawing.Point(11, 125)
         Me.lblLogradouro.Name = "lblLogradouro"
-        Me.lblLogradouro.Size = New System.Drawing.Size(74, 15)
+        Me.lblLogradouro.Size = New System.Drawing.Size(72, 15)
         Me.lblLogradouro.TabIndex = 43
         Me.lblLogradouro.Text = "Logradouro:"
         '
@@ -242,10 +243,10 @@ Partial Class frmMoradores
         'lblEmail
         '
         Me.lblEmail.AutoSize = True
-        Me.lblEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEmail.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEmail.Location = New System.Drawing.Point(565, 83)
         Me.lblEmail.Name = "lblEmail"
-        Me.lblEmail.Size = New System.Drawing.Size(46, 15)
+        Me.lblEmail.Size = New System.Drawing.Size(44, 15)
         Me.lblEmail.TabIndex = 41
         Me.lblEmail.Text = "E-mail:"
         '
@@ -275,40 +276,40 @@ Partial Class frmMoradores
         'lblWhatsapp
         '
         Me.lblWhatsapp.AutoSize = True
-        Me.lblWhatsapp.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWhatsapp.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWhatsapp.Location = New System.Drawing.Point(460, 83)
         Me.lblWhatsapp.Name = "lblWhatsapp"
-        Me.lblWhatsapp.Size = New System.Drawing.Size(65, 15)
+        Me.lblWhatsapp.Size = New System.Drawing.Size(64, 15)
         Me.lblWhatsapp.TabIndex = 37
         Me.lblWhatsapp.Text = "Whatsapp:"
         '
         'lblCpf
         '
         Me.lblCpf.AutoSize = True
-        Me.lblCpf.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCpf.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblCpf.Location = New System.Drawing.Point(319, 83)
         Me.lblCpf.Name = "lblCpf"
-        Me.lblCpf.Size = New System.Drawing.Size(33, 15)
+        Me.lblCpf.Size = New System.Drawing.Size(30, 15)
         Me.lblCpf.TabIndex = 36
         Me.lblCpf.Text = "CPF:"
         '
         'lblResponsavel
         '
         Me.lblResponsavel.AutoSize = True
-        Me.lblResponsavel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblResponsavel.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblResponsavel.Location = New System.Drawing.Point(107, 83)
         Me.lblResponsavel.Name = "lblResponsavel"
-        Me.lblResponsavel.Size = New System.Drawing.Size(81, 15)
+        Me.lblResponsavel.Size = New System.Drawing.Size(75, 15)
         Me.lblResponsavel.TabIndex = 35
         Me.lblResponsavel.Text = "Responsável:"
         '
         'lblCadastro
         '
         Me.lblCadastro.AutoSize = True
-        Me.lblCadastro.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCadastro.Location = New System.Drawing.Point(11, 57)
+        Me.lblCadastro.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCadastro.Location = New System.Drawing.Point(10, 49)
         Me.lblCadastro.Name = "lblCadastro"
-        Me.lblCadastro.Size = New System.Drawing.Size(70, 16)
+        Me.lblCadastro.Size = New System.Drawing.Size(77, 21)
         Me.lblCadastro.TabIndex = 34
         Me.lblCadastro.Text = "Cadastro"
         '
@@ -353,6 +354,7 @@ Partial Class frmMoradores
         '
         Me.lsvDados.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5})
         Me.lsvDados.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.lsvDados.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lsvDados.FullRowSelect = True
         Me.lsvDados.GridLines = True
         Me.lsvDados.HideSelection = False
@@ -424,9 +426,10 @@ Partial Class frmMoradores
         Me.Controls.Add(Me.lblResponsavel)
         Me.Controls.Add(Me.lblCadastro)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmMoradores"
-        Me.Text = "Form3"
+        Me.Text = "PassaNada | Moradores"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
