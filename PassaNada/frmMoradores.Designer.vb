@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form3
+Partial Class frmMoradores
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
@@ -22,9 +22,455 @@ Partial Class Form3
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMoradores))
+        Me.lblCod = New System.Windows.Forms.Label()
+        Me.txtCod = New System.Windows.Forms.MaskedTextBox()
+        Me.btnBuscar = New System.Windows.Forms.Button()
+        Me.txtBuscar = New System.Windows.Forms.MaskedTextBox()
+        Me.lblBuscar = New System.Windows.Forms.Label()
+        Me.lblEstado = New System.Windows.Forms.Label()
+        Me.cbEstado = New System.Windows.Forms.ComboBox()
+        Me.txtCep = New System.Windows.Forms.MaskedTextBox()
+        Me.lblCep = New System.Windows.Forms.Label()
+        Me.MaskedTextBox3 = New System.Windows.Forms.MaskedTextBox()
+        Me.lblCidade = New System.Windows.Forms.Label()
+        Me.MaskedTextBox4 = New System.Windows.Forms.MaskedTextBox()
+        Me.lblBairro = New System.Windows.Forms.Label()
+        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
+        Me.lblComplemento = New System.Windows.Forms.Label()
+        Me.txtNumero = New System.Windows.Forms.MaskedTextBox()
+        Me.lblNumero = New System.Windows.Forms.Label()
+        Me.txtLogradouro = New System.Windows.Forms.MaskedTextBox()
+        Me.lblLogradouro = New System.Windows.Forms.Label()
+        Me.txtEmail = New System.Windows.Forms.MaskedTextBox()
+        Me.lblEmail = New System.Windows.Forms.Label()
+        Me.txtWhatsapp = New System.Windows.Forms.MaskedTextBox()
+        Me.txtCpf = New System.Windows.Forms.MaskedTextBox()
+        Me.txtResponsavel = New System.Windows.Forms.MaskedTextBox()
+        Me.lblWhatsapp = New System.Windows.Forms.Label()
+        Me.lblCpf = New System.Windows.Forms.Label()
+        Me.lblResponsavel = New System.Windows.Forms.Label()
+        Me.lblCadastro = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.NovoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SalvarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExcluirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FecharToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lsvDados = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.MenuStrip1.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'lblCod
+        '
+        Me.lblCod.AutoSize = True
+        Me.lblCod.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCod.Location = New System.Drawing.Point(11, 83)
+        Me.lblCod.Name = "lblCod"
+        Me.lblCod.Size = New System.Drawing.Size(32, 15)
+        Me.lblCod.TabIndex = 61
+        Me.lblCod.Text = "Cod:"
+        '
+        'txtCod
+        '
+        Me.txtCod.Location = New System.Drawing.Point(14, 101)
+        Me.txtCod.Name = "txtCod"
+        Me.txtCod.ReadOnly = True
+        Me.txtCod.Size = New System.Drawing.Size(90, 20)
+        Me.txtCod.TabIndex = 60
+        '
+        'btnBuscar
+        '
+        Me.btnBuscar.Location = New System.Drawing.Point(712, 247)
+        Me.btnBuscar.Name = "btnBuscar"
+        Me.btnBuscar.Size = New System.Drawing.Size(75, 23)
+        Me.btnBuscar.TabIndex = 59
+        Me.btnBuscar.Text = "Buscar"
+        Me.btnBuscar.UseVisualStyleBackColor = True
+        '
+        'txtBuscar
+        '
+        Me.txtBuscar.Location = New System.Drawing.Point(514, 250)
+        Me.txtBuscar.Name = "txtBuscar"
+        Me.txtBuscar.Size = New System.Drawing.Size(179, 20)
+        Me.txtBuscar.TabIndex = 58
+        '
+        'lblBuscar
+        '
+        Me.lblBuscar.AutoSize = True
+        Me.lblBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBuscar.Location = New System.Drawing.Point(511, 232)
+        Me.lblBuscar.Name = "lblBuscar"
+        Me.lblBuscar.Size = New System.Drawing.Size(48, 15)
+        Me.lblBuscar.TabIndex = 57
+        Me.lblBuscar.Text = "Buscar:"
+        '
+        'lblEstado
+        '
+        Me.lblEstado.AutoSize = True
+        Me.lblEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEstado.Location = New System.Drawing.Point(511, 177)
+        Me.lblEstado.Name = "lblEstado"
+        Me.lblEstado.Size = New System.Drawing.Size(48, 15)
+        Me.lblEstado.TabIndex = 56
+        Me.lblEstado.Text = "Estado:"
+        '
+        'cbEstado
+        '
+        Me.cbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbEstado.FormattingEnabled = True
+        Me.cbEstado.Items.AddRange(New Object() {"AC, Acre", "AL, Alagoas", "AP, Amapá", "AM, Amazonas", "BA, Bahia", "CE, Ceará", "DF, Distrito Federal", "ES, Espirito Santo", "GO, Goiás", "MA, Maranhão", "MS, Mato Grosso do Sul", "MT, Mato Grosso", "MG, Minas Gerais", "PA, Pará", "PB, Paraíba", "PR, Paraná", "PE, Pernambuco", "PI, Piauí", "RJ, Rio de Janeiro", "RN, Rio Grande do Norte", "RS, Rio Grande do Sul", "RO, Rondônia", "RR, Roraima", "SC, Santa Catarina", "SP, São Paulo", "SE, Sergipe", "TO, Tocantins"})
+        Me.cbEstado.Location = New System.Drawing.Point(514, 195)
+        Me.cbEstado.Name = "cbEstado"
+        Me.cbEstado.Size = New System.Drawing.Size(142, 21)
+        Me.cbEstado.TabIndex = 55
+        '
+        'txtCep
+        '
+        Me.txtCep.Location = New System.Drawing.Point(662, 195)
+        Me.txtCep.Mask = "00000-000"
+        Me.txtCep.Name = "txtCep"
+        Me.txtCep.Size = New System.Drawing.Size(125, 20)
+        Me.txtCep.TabIndex = 54
+        '
+        'lblCep
+        '
+        Me.lblCep.AutoSize = True
+        Me.lblCep.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCep.Location = New System.Drawing.Point(659, 177)
+        Me.lblCep.Name = "lblCep"
+        Me.lblCep.Size = New System.Drawing.Size(34, 15)
+        Me.lblCep.TabIndex = 53
+        Me.lblCep.Text = "CEP:"
+        '
+        'MaskedTextBox3
+        '
+        Me.MaskedTextBox3.Location = New System.Drawing.Point(311, 195)
+        Me.MaskedTextBox3.Name = "MaskedTextBox3"
+        Me.MaskedTextBox3.Size = New System.Drawing.Size(197, 20)
+        Me.MaskedTextBox3.TabIndex = 52
+        '
+        'lblCidade
+        '
+        Me.lblCidade.AutoSize = True
+        Me.lblCidade.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCidade.Location = New System.Drawing.Point(308, 177)
+        Me.lblCidade.Name = "lblCidade"
+        Me.lblCidade.Size = New System.Drawing.Size(49, 15)
+        Me.lblCidade.TabIndex = 51
+        Me.lblCidade.Text = "Cidade:"
+        '
+        'MaskedTextBox4
+        '
+        Me.MaskedTextBox4.Location = New System.Drawing.Point(14, 195)
+        Me.MaskedTextBox4.Name = "MaskedTextBox4"
+        Me.MaskedTextBox4.Size = New System.Drawing.Size(291, 20)
+        Me.MaskedTextBox4.TabIndex = 50
+        '
+        'lblBairro
+        '
+        Me.lblBairro.AutoSize = True
+        Me.lblBairro.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBairro.Location = New System.Drawing.Point(11, 177)
+        Me.lblBairro.Name = "lblBairro"
+        Me.lblBairro.Size = New System.Drawing.Size(43, 15)
+        Me.lblBairro.TabIndex = 49
+        Me.lblBairro.Text = "Bairro:"
+        '
+        'MaskedTextBox1
+        '
+        Me.MaskedTextBox1.Location = New System.Drawing.Point(457, 143)
+        Me.MaskedTextBox1.Name = "MaskedTextBox1"
+        Me.MaskedTextBox1.Size = New System.Drawing.Size(330, 20)
+        Me.MaskedTextBox1.TabIndex = 48
+        '
+        'lblComplemento
+        '
+        Me.lblComplemento.AutoSize = True
+        Me.lblComplemento.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblComplemento.Location = New System.Drawing.Point(457, 125)
+        Me.lblComplemento.Name = "lblComplemento"
+        Me.lblComplemento.Size = New System.Drawing.Size(88, 15)
+        Me.lblComplemento.TabIndex = 47
+        Me.lblComplemento.Text = "Complemento:"
+        '
+        'txtNumero
+        '
+        Me.txtNumero.Location = New System.Drawing.Point(316, 143)
+        Me.txtNumero.Name = "txtNumero"
+        Me.txtNumero.Size = New System.Drawing.Size(135, 20)
+        Me.txtNumero.TabIndex = 46
+        '
+        'lblNumero
+        '
+        Me.lblNumero.AutoSize = True
+        Me.lblNumero.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNumero.Location = New System.Drawing.Point(313, 125)
+        Me.lblNumero.Name = "lblNumero"
+        Me.lblNumero.Size = New System.Drawing.Size(55, 15)
+        Me.lblNumero.TabIndex = 45
+        Me.lblNumero.Text = "Número:"
+        '
+        'txtLogradouro
+        '
+        Me.txtLogradouro.Location = New System.Drawing.Point(14, 143)
+        Me.txtLogradouro.Name = "txtLogradouro"
+        Me.txtLogradouro.Size = New System.Drawing.Size(296, 20)
+        Me.txtLogradouro.TabIndex = 44
+        '
+        'lblLogradouro
+        '
+        Me.lblLogradouro.AutoSize = True
+        Me.lblLogradouro.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLogradouro.Location = New System.Drawing.Point(11, 125)
+        Me.lblLogradouro.Name = "lblLogradouro"
+        Me.lblLogradouro.Size = New System.Drawing.Size(74, 15)
+        Me.lblLogradouro.TabIndex = 43
+        Me.lblLogradouro.Text = "Logradouro:"
+        '
+        'txtEmail
+        '
+        Me.txtEmail.Location = New System.Drawing.Point(565, 101)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(222, 20)
+        Me.txtEmail.TabIndex = 42
+        '
+        'lblEmail
+        '
+        Me.lblEmail.AutoSize = True
+        Me.lblEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEmail.Location = New System.Drawing.Point(565, 83)
+        Me.lblEmail.Name = "lblEmail"
+        Me.lblEmail.Size = New System.Drawing.Size(46, 15)
+        Me.lblEmail.TabIndex = 41
+        Me.lblEmail.Text = "E-mail:"
+        '
+        'txtWhatsapp
+        '
+        Me.txtWhatsapp.Location = New System.Drawing.Point(463, 101)
+        Me.txtWhatsapp.Mask = "(00)0,000-0000"
+        Me.txtWhatsapp.Name = "txtWhatsapp"
+        Me.txtWhatsapp.Size = New System.Drawing.Size(96, 20)
+        Me.txtWhatsapp.TabIndex = 40
+        '
+        'txtCpf
+        '
+        Me.txtCpf.Location = New System.Drawing.Point(322, 101)
+        Me.txtCpf.Mask = "000,000,000-00"
+        Me.txtCpf.Name = "txtCpf"
+        Me.txtCpf.Size = New System.Drawing.Size(135, 20)
+        Me.txtCpf.TabIndex = 39
+        '
+        'txtResponsavel
+        '
+        Me.txtResponsavel.Location = New System.Drawing.Point(110, 101)
+        Me.txtResponsavel.Name = "txtResponsavel"
+        Me.txtResponsavel.Size = New System.Drawing.Size(203, 20)
+        Me.txtResponsavel.TabIndex = 38
+        '
+        'lblWhatsapp
+        '
+        Me.lblWhatsapp.AutoSize = True
+        Me.lblWhatsapp.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWhatsapp.Location = New System.Drawing.Point(460, 83)
+        Me.lblWhatsapp.Name = "lblWhatsapp"
+        Me.lblWhatsapp.Size = New System.Drawing.Size(65, 15)
+        Me.lblWhatsapp.TabIndex = 37
+        Me.lblWhatsapp.Text = "Whatsapp:"
+        '
+        'lblCpf
+        '
+        Me.lblCpf.AutoSize = True
+        Me.lblCpf.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCpf.Location = New System.Drawing.Point(319, 83)
+        Me.lblCpf.Name = "lblCpf"
+        Me.lblCpf.Size = New System.Drawing.Size(33, 15)
+        Me.lblCpf.TabIndex = 36
+        Me.lblCpf.Text = "CPF:"
+        '
+        'lblResponsavel
+        '
+        Me.lblResponsavel.AutoSize = True
+        Me.lblResponsavel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblResponsavel.Location = New System.Drawing.Point(107, 83)
+        Me.lblResponsavel.Name = "lblResponsavel"
+        Me.lblResponsavel.Size = New System.Drawing.Size(81, 15)
+        Me.lblResponsavel.TabIndex = 35
+        Me.lblResponsavel.Text = "Responsável:"
+        '
+        'lblCadastro
+        '
+        Me.lblCadastro.AutoSize = True
+        Me.lblCadastro.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCadastro.Location = New System.Drawing.Point(11, 57)
+        Me.lblCadastro.Name = "lblCadastro"
+        Me.lblCadastro.Size = New System.Drawing.Size(70, 16)
+        Me.lblCadastro.TabIndex = 34
+        Me.lblCadastro.Text = "Cadastro"
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovoToolStripMenuItem, Me.SalvarToolStripMenuItem, Me.ExcluirToolStripMenuItem, Me.FecharToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.TabIndex = 62
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'NovoToolStripMenuItem
+        '
+        Me.NovoToolStripMenuItem.Image = CType(resources.GetObject("NovoToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.NovoToolStripMenuItem.Name = "NovoToolStripMenuItem"
+        Me.NovoToolStripMenuItem.Size = New System.Drawing.Size(64, 20)
+        Me.NovoToolStripMenuItem.Text = "&Novo"
+        '
+        'SalvarToolStripMenuItem
+        '
+        Me.SalvarToolStripMenuItem.Image = CType(resources.GetObject("SalvarToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.SalvarToolStripMenuItem.Name = "SalvarToolStripMenuItem"
+        Me.SalvarToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
+        Me.SalvarToolStripMenuItem.Text = "&Salvar"
+        '
+        'ExcluirToolStripMenuItem
+        '
+        Me.ExcluirToolStripMenuItem.Image = CType(resources.GetObject("ExcluirToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.ExcluirToolStripMenuItem.Name = "ExcluirToolStripMenuItem"
+        Me.ExcluirToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
+        Me.ExcluirToolStripMenuItem.Text = "&Excluir"
+        '
+        'FecharToolStripMenuItem
+        '
+        Me.FecharToolStripMenuItem.Image = CType(resources.GetObject("FecharToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.FecharToolStripMenuItem.Name = "FecharToolStripMenuItem"
+        Me.FecharToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
+        Me.FecharToolStripMenuItem.Text = "&Fechar"
+        '
+        'lsvDados
+        '
+        Me.lsvDados.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5})
+        Me.lsvDados.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.lsvDados.FullRowSelect = True
+        Me.lsvDados.GridLines = True
+        Me.lsvDados.HideSelection = False
+        Me.lsvDados.Location = New System.Drawing.Point(0, 276)
+        Me.lsvDados.Name = "lsvDados"
+        Me.lsvDados.Size = New System.Drawing.Size(800, 207)
+        Me.lsvDados.TabIndex = 63
+        Me.lsvDados.UseCompatibleStateImageBehavior = False
+        Me.lsvDados.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "Cod"
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "Responsável"
+        Me.ColumnHeader2.Width = 250
+        '
+        'ColumnHeader3
+        '
+        Me.ColumnHeader3.Text = "CPF"
+        Me.ColumnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader3.Width = 150
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "WhatsApp"
+        Me.ColumnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.ColumnHeader4.Width = 150
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "E-mail"
+        Me.ColumnHeader5.Width = 186
+        '
+        'frmMoradores
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 483)
+        Me.Controls.Add(Me.lsvDados)
+        Me.Controls.Add(Me.lblCod)
+        Me.Controls.Add(Me.txtCod)
+        Me.Controls.Add(Me.btnBuscar)
+        Me.Controls.Add(Me.txtBuscar)
+        Me.Controls.Add(Me.lblBuscar)
+        Me.Controls.Add(Me.lblEstado)
+        Me.Controls.Add(Me.cbEstado)
+        Me.Controls.Add(Me.txtCep)
+        Me.Controls.Add(Me.lblCep)
+        Me.Controls.Add(Me.MaskedTextBox3)
+        Me.Controls.Add(Me.lblCidade)
+        Me.Controls.Add(Me.MaskedTextBox4)
+        Me.Controls.Add(Me.lblBairro)
+        Me.Controls.Add(Me.MaskedTextBox1)
+        Me.Controls.Add(Me.lblComplemento)
+        Me.Controls.Add(Me.txtNumero)
+        Me.Controls.Add(Me.lblNumero)
+        Me.Controls.Add(Me.txtLogradouro)
+        Me.Controls.Add(Me.lblLogradouro)
+        Me.Controls.Add(Me.txtEmail)
+        Me.Controls.Add(Me.lblEmail)
+        Me.Controls.Add(Me.txtWhatsapp)
+        Me.Controls.Add(Me.txtCpf)
+        Me.Controls.Add(Me.txtResponsavel)
+        Me.Controls.Add(Me.lblWhatsapp)
+        Me.Controls.Add(Me.lblCpf)
+        Me.Controls.Add(Me.lblResponsavel)
+        Me.Controls.Add(Me.lblCadastro)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
+        Me.Name = "frmMoradores"
         Me.Text = "Form3"
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
+
+    Friend WithEvents lblCod As Label
+    Friend WithEvents txtCod As MaskedTextBox
+    Friend WithEvents btnBuscar As Button
+    Friend WithEvents txtBuscar As MaskedTextBox
+    Friend WithEvents lblBuscar As Label
+    Friend WithEvents lblEstado As Label
+    Friend WithEvents cbEstado As ComboBox
+    Friend WithEvents txtCep As MaskedTextBox
+    Friend WithEvents lblCep As Label
+    Friend WithEvents MaskedTextBox3 As MaskedTextBox
+    Friend WithEvents lblCidade As Label
+    Friend WithEvents MaskedTextBox4 As MaskedTextBox
+    Friend WithEvents lblBairro As Label
+    Friend WithEvents MaskedTextBox1 As MaskedTextBox
+    Friend WithEvents lblComplemento As Label
+    Friend WithEvents txtNumero As MaskedTextBox
+    Friend WithEvents lblNumero As Label
+    Friend WithEvents txtLogradouro As MaskedTextBox
+    Friend WithEvents lblLogradouro As Label
+    Friend WithEvents txtEmail As MaskedTextBox
+    Friend WithEvents lblEmail As Label
+    Friend WithEvents txtWhatsapp As MaskedTextBox
+    Friend WithEvents txtCpf As MaskedTextBox
+    Friend WithEvents txtResponsavel As MaskedTextBox
+    Friend WithEvents lblWhatsapp As Label
+    Friend WithEvents lblCpf As Label
+    Friend WithEvents lblResponsavel As Label
+    Friend WithEvents lblCadastro As Label
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents NovoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SalvarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExcluirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FecharToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents lsvDados As ListView
+    Friend WithEvents ColumnHeader1 As ColumnHeader
+    Friend WithEvents ColumnHeader2 As ColumnHeader
+    Friend WithEvents ColumnHeader3 As ColumnHeader
+    Friend WithEvents ColumnHeader4 As ColumnHeader
+    Friend WithEvents ColumnHeader5 As ColumnHeader
 End Class

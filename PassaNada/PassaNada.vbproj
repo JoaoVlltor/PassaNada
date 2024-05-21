@@ -92,6 +92,12 @@
     <Compile Include="frmMoradores.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmVisitantes.Designer.vb">
+      <DependentUpon>frmVisitantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisitantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMoradores.resx">
       <DependentUpon>frmMoradores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisitantes.resx">
+      <DependentUpon>frmVisitantes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
