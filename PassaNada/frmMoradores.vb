@@ -14,4 +14,8 @@
     Private Sub lsvDados_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lsvDados.SelectedIndexChanged
 
     End Sub
+
+    Private Sub lblCadastro_Click(sender As Object, e As EventArgs) Handles lblCadastro.Click
+
+    End Sub
 End Class

@@ -10,4 +10,8 @@
     Private Sub btnHistorico_Click(sender As Object, e As EventArgs) Handles btnHistorico.Click
 
     End Sub
+
+    Private Sub VisitantesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VisitantesToolStripMenuItem.Click
+
+    End Sub
 End Class
