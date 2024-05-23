@@ -150,10 +150,10 @@ Partial Class frmMoradores
         '
         'txtCidade
         '
-        Me.MaskedTextBox3.Location = New System.Drawing.Point(311, 195)
-        Me.MaskedTextBox3.Name = "MaskedTextBox3"
-        Me.MaskedTextBox3.Size = New System.Drawing.Size(197, 20)
-        Me.MaskedTextBox3.TabIndex = 52
+        Me.txtCidade.Location = New System.Drawing.Point(311, 195)
+        Me.txtCidade.Name = "txtCidade"
+        Me.txtCidade.Size = New System.Drawing.Size(197, 20)
+        Me.txtCidade.TabIndex = 52
         '
         'lblCidade
         '
@@ -167,10 +167,10 @@ Partial Class frmMoradores
         '
         'txtBairro
         '
-        Me.MaskedTextBox4.Location = New System.Drawing.Point(14, 195)
-        Me.MaskedTextBox4.Name = "MaskedTextBox4"
-        Me.MaskedTextBox4.Size = New System.Drawing.Size(291, 20)
-        Me.MaskedTextBox4.TabIndex = 50
+        Me.txtBairro.Location = New System.Drawing.Point(14, 195)
+        Me.txtBairro.Name = "txtBairro"
+        Me.txtBairro.Size = New System.Drawing.Size(291, 20)
+        Me.txtBairro.TabIndex = 50
         '
         'lblBairro
         '
@@ -184,10 +184,10 @@ Partial Class frmMoradores
         '
         'txtComplemento
         '
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(457, 143)
-        Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(330, 20)
-        Me.MaskedTextBox1.TabIndex = 48
+        Me.txtComplemento.Location = New System.Drawing.Point(457, 143)
+        Me.txtComplemento.Name = "txtComplemento"
+        Me.txtComplemento.Size = New System.Drawing.Size(330, 20)
+        Me.txtComplemento.TabIndex = 48
         '
         'lblComplemento
         '
