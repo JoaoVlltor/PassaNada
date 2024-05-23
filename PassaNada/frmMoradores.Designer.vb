@@ -80,7 +80,7 @@ Partial Class frmMoradores
         Me.txtCod.Location = New System.Drawing.Point(14, 101)
         Me.txtCod.Name = "txtCod"
         Me.txtCod.ReadOnly = True
-        Me.txtCod.Size = New System.Drawing.Size(90, 20)
+        Me.txtCod.Size = New System.Drawing.Size(90, 22)
         Me.txtCod.TabIndex = 60
         '
         'btnBuscar
@@ -97,7 +97,7 @@ Partial Class frmMoradores
         '
         Me.txtBuscar.Location = New System.Drawing.Point(514, 250)
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(179, 20)
+        Me.txtBuscar.Size = New System.Drawing.Size(179, 22)
         Me.txtBuscar.TabIndex = 58
         '
         'lblBuscar
@@ -135,7 +135,7 @@ Partial Class frmMoradores
         Me.txtCep.Location = New System.Drawing.Point(662, 195)
         Me.txtCep.Mask = "00000-000"
         Me.txtCep.Name = "txtCep"
-        Me.txtCep.Size = New System.Drawing.Size(125, 20)
+        Me.txtCep.Size = New System.Drawing.Size(125, 22)
         Me.txtCep.TabIndex = 54
         '
         'lblCep
@@ -152,7 +152,7 @@ Partial Class frmMoradores
         '
         Me.MaskedTextBox3.Location = New System.Drawing.Point(311, 195)
         Me.MaskedTextBox3.Name = "MaskedTextBox3"
-        Me.MaskedTextBox3.Size = New System.Drawing.Size(197, 20)
+        Me.MaskedTextBox3.Size = New System.Drawing.Size(197, 22)
         Me.MaskedTextBox3.TabIndex = 52
         '
         'lblCidade
@@ -169,7 +169,7 @@ Partial Class frmMoradores
         '
         Me.MaskedTextBox4.Location = New System.Drawing.Point(14, 195)
         Me.MaskedTextBox4.Name = "MaskedTextBox4"
-        Me.MaskedTextBox4.Size = New System.Drawing.Size(291, 20)
+        Me.MaskedTextBox4.Size = New System.Drawing.Size(291, 22)
         Me.MaskedTextBox4.TabIndex = 50
         '
         'lblBairro
@@ -186,7 +186,7 @@ Partial Class frmMoradores
         '
         Me.MaskedTextBox1.Location = New System.Drawing.Point(457, 143)
         Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(330, 20)
+        Me.MaskedTextBox1.Size = New System.Drawing.Size(330, 22)
         Me.MaskedTextBox1.TabIndex = 48
         '
         'lblComplemento
@@ -203,7 +203,7 @@ Partial Class frmMoradores
         '
         Me.txtNumero.Location = New System.Drawing.Point(316, 143)
         Me.txtNumero.Name = "txtNumero"
-        Me.txtNumero.Size = New System.Drawing.Size(135, 20)
+        Me.txtNumero.Size = New System.Drawing.Size(135, 22)
         Me.txtNumero.TabIndex = 46
         '
         'lblNumero
@@ -220,7 +220,7 @@ Partial Class frmMoradores
         '
         Me.txtLogradouro.Location = New System.Drawing.Point(14, 143)
         Me.txtLogradouro.Name = "txtLogradouro"
-        Me.txtLogradouro.Size = New System.Drawing.Size(296, 20)
+        Me.txtLogradouro.Size = New System.Drawing.Size(296, 22)
         Me.txtLogradouro.TabIndex = 44
         '
         'lblLogradouro
@@ -237,7 +237,7 @@ Partial Class frmMoradores
         '
         Me.txtEmail.Location = New System.Drawing.Point(565, 101)
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(222, 20)
+        Me.txtEmail.Size = New System.Drawing.Size(222, 22)
         Me.txtEmail.TabIndex = 42
         '
         'lblEmail
@@ -255,7 +255,7 @@ Partial Class frmMoradores
         Me.txtWhatsapp.Location = New System.Drawing.Point(463, 101)
         Me.txtWhatsapp.Mask = "(00)0,000-0000"
         Me.txtWhatsapp.Name = "txtWhatsapp"
-        Me.txtWhatsapp.Size = New System.Drawing.Size(96, 20)
+        Me.txtWhatsapp.Size = New System.Drawing.Size(96, 22)
         Me.txtWhatsapp.TabIndex = 40
         '
         'txtCpf
@@ -263,14 +263,14 @@ Partial Class frmMoradores
         Me.txtCpf.Location = New System.Drawing.Point(322, 101)
         Me.txtCpf.Mask = "000,000,000-00"
         Me.txtCpf.Name = "txtCpf"
-        Me.txtCpf.Size = New System.Drawing.Size(135, 20)
+        Me.txtCpf.Size = New System.Drawing.Size(135, 22)
         Me.txtCpf.TabIndex = 39
         '
         'txtResponsavel
         '
         Me.txtResponsavel.Location = New System.Drawing.Point(110, 101)
         Me.txtResponsavel.Name = "txtResponsavel"
-        Me.txtResponsavel.Size = New System.Drawing.Size(203, 20)
+        Me.txtResponsavel.Size = New System.Drawing.Size(203, 22)
         Me.txtResponsavel.TabIndex = 38
         '
         'lblWhatsapp
@@ -426,6 +426,7 @@ Partial Class frmMoradores
         Me.Controls.Add(Me.lblResponsavel)
         Me.Controls.Add(Me.lblCadastro)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmMoradores"
