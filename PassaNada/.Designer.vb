@@ -27,8 +27,8 @@ Partial Class frmLogin
         Me.lblSenha = New System.Windows.Forms.Label()
         Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.txtSenha = New System.Windows.Forms.TextBox()
-        Me.lblLimpar = New System.Windows.Forms.Button()
-        Me.lblEntrar = New System.Windows.Forms.Button()
+        Me.btnLimpar = New System.Windows.Forms.Button()
+        Me.btnEntrar = New System.Windows.Forms.Button()
         Me.imgLogin = New System.Windows.Forms.PictureBox()
         CType(Me.imgLogin, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -71,28 +71,28 @@ Partial Class frmLogin
         Me.txtSenha.Size = New System.Drawing.Size(192, 20)
         Me.txtSenha.TabIndex = 4
         '
-        'lblLimpar
+        'btnLimpar
         '
-        Me.lblLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.lblLimpar.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLimpar.ForeColor = System.Drawing.Color.Black
-        Me.lblLimpar.Location = New System.Drawing.Point(220, 351)
-        Me.lblLimpar.Name = "lblLimpar"
-        Me.lblLimpar.Size = New System.Drawing.Size(94, 35)
-        Me.lblLimpar.TabIndex = 6
-        Me.lblLimpar.Text = "Limpar"
-        Me.lblLimpar.UseVisualStyleBackColor = True
+        Me.btnLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnLimpar.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLimpar.ForeColor = System.Drawing.Color.Black
+        Me.btnLimpar.Location = New System.Drawing.Point(220, 351)
+        Me.btnLimpar.Name = "btnLimpar"
+        Me.btnLimpar.Size = New System.Drawing.Size(94, 35)
+        Me.btnLimpar.TabIndex = 6
+        Me.btnLimpar.Text = "Limpar"
+        Me.btnLimpar.UseVisualStyleBackColor = True
         '
-        'lblEntrar
+        'btnEntrar
         '
-        Me.lblEntrar.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEntrar.ForeColor = System.Drawing.Color.Black
-        Me.lblEntrar.Location = New System.Drawing.Point(317, 351)
-        Me.lblEntrar.Name = "lblEntrar"
-        Me.lblEntrar.Size = New System.Drawing.Size(94, 35)
-        Me.lblEntrar.TabIndex = 7
-        Me.lblEntrar.Text = "Entrar"
-        Me.lblEntrar.UseVisualStyleBackColor = True
+        Me.btnEntrar.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEntrar.ForeColor = System.Drawing.Color.Black
+        Me.btnEntrar.Location = New System.Drawing.Point(317, 351)
+        Me.btnEntrar.Name = "btnEntrar"
+        Me.btnEntrar.Size = New System.Drawing.Size(94, 35)
+        Me.btnEntrar.TabIndex = 7
+        Me.btnEntrar.Text = "Entrar"
+        Me.btnEntrar.UseVisualStyleBackColor = True
         '
         'imgLogin
         '
@@ -107,13 +107,14 @@ Partial Class frmLogin
         '
         'frmLogin
         '
+        Me.AcceptButton = Me.btnEntrar
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(631, 436)
-        Me.Controls.Add(Me.lblEntrar)
-        Me.Controls.Add(Me.lblLimpar)
+        Me.Controls.Add(Me.btnEntrar)
+        Me.Controls.Add(Me.btnLimpar)
         Me.Controls.Add(Me.imgLogin)
         Me.Controls.Add(Me.txtSenha)
         Me.Controls.Add(Me.txtEmail)
@@ -123,6 +124,7 @@ Partial Class frmLogin
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmLogin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PassaNada | Login"
         CType(Me.imgLogin, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -133,7 +135,7 @@ Partial Class frmLogin
     Friend WithEvents lblSenha As Label
     Friend WithEvents txtEmail As TextBox
     Friend WithEvents txtSenha As TextBox
-    Friend WithEvents lblLimpar As Button
-    Friend WithEvents lblEntrar As Button
+    Friend WithEvents btnLimpar As Button
+    Friend WithEvents btnEntrar As Button
     Friend WithEvents imgLogin As PictureBox
 End Class

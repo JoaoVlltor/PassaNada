@@ -24,6 +24,7 @@ Partial Class frmVisitantes
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmVisitantes))
         Me.gbVisitante = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.MaskedTextBox7 = New System.Windows.Forms.MaskedTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -59,6 +60,7 @@ Partial Class frmVisitantes
         '
         'gbVisitante
         '
+        Me.gbVisitante.Controls.Add(Me.Button1)
         Me.gbVisitante.Controls.Add(Me.MaskedTextBox7)
         Me.gbVisitante.Controls.Add(Me.Label4)
         Me.gbVisitante.Controls.Add(Me.PictureBox1)
@@ -73,10 +75,19 @@ Partial Class frmVisitantes
         Me.gbVisitante.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbVisitante.Location = New System.Drawing.Point(12, 12)
         Me.gbVisitante.Name = "gbVisitante"
-        Me.gbVisitante.Size = New System.Drawing.Size(775, 179)
+        Me.gbVisitante.Size = New System.Drawing.Size(775, 204)
         Me.gbVisitante.TabIndex = 0
         Me.gbVisitante.TabStop = False
         Me.gbVisitante.Text = "Dados Visitante:"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(19, 168)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(142, 30)
+        Me.Button1.TabIndex = 73
+        Me.Button1.Text = "Foto"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'MaskedTextBox7
         '
@@ -99,7 +110,7 @@ Partial Class frmVisitantes
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(27, 19)
+        Me.PictureBox1.Location = New System.Drawing.Point(19, 19)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(142, 143)
         Me.PictureBox1.TabIndex = 70
@@ -195,9 +206,9 @@ Partial Class frmVisitantes
         Me.gbMoradores.Controls.Add(Me.MaskedTextBox2)
         Me.gbMoradores.Controls.Add(Me.Label2)
         Me.gbMoradores.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbMoradores.Location = New System.Drawing.Point(12, 197)
+        Me.gbMoradores.Location = New System.Drawing.Point(12, 222)
         Me.gbMoradores.Name = "gbMoradores"
-        Me.gbMoradores.Size = New System.Drawing.Size(775, 241)
+        Me.gbMoradores.Size = New System.Drawing.Size(775, 216)
         Me.gbMoradores.TabIndex = 1
         Me.gbMoradores.TabStop = False
         Me.gbMoradores.Text = "Dados Morador:"
@@ -356,6 +367,7 @@ Partial Class frmVisitantes
         Me.Controls.Add(Me.gbVisitante)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmVisitantes"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PassaNada | Visitantes"
         Me.gbVisitante.ResumeLayout(False)
         Me.gbVisitante.PerformLayout()
@@ -395,4 +407,5 @@ Partial Class frmVisitantes
     Friend WithEvents lblNumero As Label
     Friend WithEvents MaskedTextBox1 As MaskedTextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Button1 As Button
 End Class

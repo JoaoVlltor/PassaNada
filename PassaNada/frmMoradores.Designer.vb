@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmMoradores
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmMoradores
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMoradores))
         Me.lblCod = New System.Windows.Forms.Label()
@@ -29,14 +29,14 @@ Partial Class frmMoradores
         Me.txtBuscar = New System.Windows.Forms.MaskedTextBox()
         Me.lblBuscar = New System.Windows.Forms.Label()
         Me.lblEstado = New System.Windows.Forms.Label()
-        Me.cbEstado = New System.Windows.Forms.ComboBox()
+        Me.cmbEstado = New System.Windows.Forms.ComboBox()
         Me.txtCep = New System.Windows.Forms.MaskedTextBox()
         Me.lblCep = New System.Windows.Forms.Label()
-        Me.MaskedTextBox3 = New System.Windows.Forms.MaskedTextBox()
+        Me.txtCidade = New System.Windows.Forms.MaskedTextBox()
         Me.lblCidade = New System.Windows.Forms.Label()
-        Me.MaskedTextBox4 = New System.Windows.Forms.MaskedTextBox()
+        Me.txtBairro = New System.Windows.Forms.MaskedTextBox()
         Me.lblBairro = New System.Windows.Forms.Label()
-        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
+        Me.txtComplemento = New System.Windows.Forms.MaskedTextBox()
         Me.lblComplemento = New System.Windows.Forms.Label()
         Me.txtNumero = New System.Windows.Forms.MaskedTextBox()
         Me.lblNumero = New System.Windows.Forms.Label()
@@ -120,15 +120,15 @@ Partial Class frmMoradores
         Me.lblEstado.TabIndex = 56
         Me.lblEstado.Text = "Estado:"
         '
-        'cbEstado
+        'cmbEstado
         '
-        Me.cbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbEstado.FormattingEnabled = True
-        Me.cbEstado.Items.AddRange(New Object() {"AC, Acre", "AL, Alagoas", "AP, Amapá", "AM, Amazonas", "BA, Bahia", "CE, Ceará", "DF, Distrito Federal", "ES, Espirito Santo", "GO, Goiás", "MA, Maranhão", "MS, Mato Grosso do Sul", "MT, Mato Grosso", "MG, Minas Gerais", "PA, Pará", "PB, Paraíba", "PR, Paraná", "PE, Pernambuco", "PI, Piauí", "RJ, Rio de Janeiro", "RN, Rio Grande do Norte", "RS, Rio Grande do Sul", "RO, Rondônia", "RR, Roraima", "SC, Santa Catarina", "SP, São Paulo", "SE, Sergipe", "TO, Tocantins"})
-        Me.cbEstado.Location = New System.Drawing.Point(514, 195)
-        Me.cbEstado.Name = "cbEstado"
-        Me.cbEstado.Size = New System.Drawing.Size(142, 21)
-        Me.cbEstado.TabIndex = 55
+        Me.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbEstado.FormattingEnabled = True
+        Me.cmbEstado.Items.AddRange(New Object() {"AC, Acre", "AL, Alagoas", "AP, Amapá", "AM, Amazonas", "BA, Bahia", "CE, Ceará", "DF, Distrito Federal", "ES, Espirito Santo", "GO, Goiás", "MA, Maranhão", "MS, Mato Grosso do Sul", "MT, Mato Grosso", "MG, Minas Gerais", "PA, Pará", "PB, Paraíba", "PR, Paraná", "PE, Pernambuco", "PI, Piauí", "RJ, Rio de Janeiro", "RN, Rio Grande do Norte", "RS, Rio Grande do Sul", "RO, Rondônia", "RR, Roraima", "SC, Santa Catarina", "SP, São Paulo", "SE, Sergipe", "TO, Tocantins"})
+        Me.cmbEstado.Location = New System.Drawing.Point(514, 195)
+        Me.cmbEstado.Name = "cmbEstado"
+        Me.cmbEstado.Size = New System.Drawing.Size(142, 21)
+        Me.cmbEstado.TabIndex = 55
         '
         'txtCep
         '
@@ -148,11 +148,11 @@ Partial Class frmMoradores
         Me.lblCep.TabIndex = 53
         Me.lblCep.Text = "CEP:"
         '
-        'MaskedTextBox3
+        'txtCidade
         '
         Me.MaskedTextBox3.Location = New System.Drawing.Point(311, 195)
         Me.MaskedTextBox3.Name = "MaskedTextBox3"
-        Me.MaskedTextBox3.Size = New System.Drawing.Size(197, 22)
+        Me.MaskedTextBox3.Size = New System.Drawing.Size(197, 20)
         Me.MaskedTextBox3.TabIndex = 52
         '
         'lblCidade
@@ -165,11 +165,11 @@ Partial Class frmMoradores
         Me.lblCidade.TabIndex = 51
         Me.lblCidade.Text = "Cidade:"
         '
-        'MaskedTextBox4
+        'txtBairro
         '
         Me.MaskedTextBox4.Location = New System.Drawing.Point(14, 195)
         Me.MaskedTextBox4.Name = "MaskedTextBox4"
-        Me.MaskedTextBox4.Size = New System.Drawing.Size(291, 22)
+        Me.MaskedTextBox4.Size = New System.Drawing.Size(291, 20)
         Me.MaskedTextBox4.TabIndex = 50
         '
         'lblBairro
@@ -182,11 +182,11 @@ Partial Class frmMoradores
         Me.lblBairro.TabIndex = 49
         Me.lblBairro.Text = "Bairro:"
         '
-        'MaskedTextBox1
+        'txtComplemento
         '
         Me.MaskedTextBox1.Location = New System.Drawing.Point(457, 143)
         Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(330, 22)
+        Me.MaskedTextBox1.Size = New System.Drawing.Size(330, 20)
         Me.MaskedTextBox1.TabIndex = 48
         '
         'lblComplemento
@@ -403,14 +403,14 @@ Partial Class frmMoradores
         Me.Controls.Add(Me.txtBuscar)
         Me.Controls.Add(Me.lblBuscar)
         Me.Controls.Add(Me.lblEstado)
-        Me.Controls.Add(Me.cbEstado)
+        Me.Controls.Add(Me.cmbEstado)
         Me.Controls.Add(Me.txtCep)
         Me.Controls.Add(Me.lblCep)
-        Me.Controls.Add(Me.MaskedTextBox3)
+        Me.Controls.Add(Me.txtCidade)
         Me.Controls.Add(Me.lblCidade)
-        Me.Controls.Add(Me.MaskedTextBox4)
+        Me.Controls.Add(Me.txtBairro)
         Me.Controls.Add(Me.lblBairro)
-        Me.Controls.Add(Me.MaskedTextBox1)
+        Me.Controls.Add(Me.txtComplemento)
         Me.Controls.Add(Me.lblComplemento)
         Me.Controls.Add(Me.txtNumero)
         Me.Controls.Add(Me.lblNumero)
@@ -430,6 +430,7 @@ Partial Class frmMoradores
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmMoradores"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PassaNada | Moradores"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
@@ -444,14 +445,14 @@ Partial Class frmMoradores
     Friend WithEvents txtBuscar As MaskedTextBox
     Friend WithEvents lblBuscar As Label
     Friend WithEvents lblEstado As Label
-    Friend WithEvents cbEstado As ComboBox
+    Friend WithEvents cmbEstado As ComboBox
     Friend WithEvents txtCep As MaskedTextBox
     Friend WithEvents lblCep As Label
-    Friend WithEvents MaskedTextBox3 As MaskedTextBox
+    Friend WithEvents txtCidade As MaskedTextBox
     Friend WithEvents lblCidade As Label
-    Friend WithEvents MaskedTextBox4 As MaskedTextBox
+    Friend WithEvents txtBairro As MaskedTextBox
     Friend WithEvents lblBairro As Label
-    Friend WithEvents MaskedTextBox1 As MaskedTextBox
+    Friend WithEvents txtComplemento As MaskedTextBox
     Friend WithEvents lblComplemento As Label
     Friend WithEvents txtNumero As MaskedTextBox
     Friend WithEvents lblNumero As Label
