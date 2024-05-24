@@ -152,7 +152,7 @@ Partial Class frmMoradores
         '
         Me.txtCidade.Location = New System.Drawing.Point(311, 195)
         Me.txtCidade.Name = "txtCidade"
-        Me.txtCidade.Size = New System.Drawing.Size(197, 20)
+        Me.txtCidade.Size = New System.Drawing.Size(197, 22)
         Me.txtCidade.TabIndex = 52
         '
         'lblCidade
@@ -169,7 +169,7 @@ Partial Class frmMoradores
         '
         Me.txtBairro.Location = New System.Drawing.Point(14, 195)
         Me.txtBairro.Name = "txtBairro"
-        Me.txtBairro.Size = New System.Drawing.Size(291, 20)
+        Me.txtBairro.Size = New System.Drawing.Size(291, 22)
         Me.txtBairro.TabIndex = 50
         '
         'lblBairro
@@ -186,7 +186,7 @@ Partial Class frmMoradores
         '
         Me.txtComplemento.Location = New System.Drawing.Point(457, 143)
         Me.txtComplemento.Name = "txtComplemento"
-        Me.txtComplemento.Size = New System.Drawing.Size(330, 20)
+        Me.txtComplemento.Size = New System.Drawing.Size(330, 22)
         Me.txtComplemento.TabIndex = 48
         '
         'lblComplemento
@@ -253,7 +253,7 @@ Partial Class frmMoradores
         'txtWhatsapp
         '
         Me.txtWhatsapp.Location = New System.Drawing.Point(463, 101)
-        Me.txtWhatsapp.Mask = "(00)0,000-0000"
+        Me.txtWhatsapp.Mask = "(00)0000-00000"
         Me.txtWhatsapp.Name = "txtWhatsapp"
         Me.txtWhatsapp.Size = New System.Drawing.Size(96, 22)
         Me.txtWhatsapp.TabIndex = 40

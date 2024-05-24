@@ -29,4 +29,34 @@
             Me.Close()
         End If
     End Sub
+
+    Private Sub SalvarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalvarToolStripMenuItem.Click
+        If txtResponsavel.Text = "" Or txtEmail.Text = "" Then
+            MsgBox("Por favor, preencha os campos obrigatórios!", MsgBoxStyle.Information, "Campo obrigatório")
+        Else
+            Dim item As New ListViewItem
+
+            With lsvDados.Items.Add(item)
+                .Text = txtCod.Text
+                .SubItems.Add(txtResponsavel.Text)
+                .SubItems.Add(txtCpf.Text)
+                .SubItems.Add(txtWhatsapp.Text)
+                .SubItems.Add(txtEmail.Text)
+            End With
+
+            limparFormulario()
+        End If
+    End Sub
+
+    Private Sub lsvDados_DoubleClick(sender As Object, e As EventArgs) Handles lsvDados.DoubleClick
+        If lsvDados.SelectedIndices(0) = "" Then
+            txtCod.Text = lsvDados.SelectedItems(0).Text
+            txtResponsavel.Text = lsvDados.SelectedItems(0).SubItems(1).Text
+            txtCpf.Text = lsvDados.SelectedItems(0).SubItems(2).Text
+            txtWhatsapp.Text = lsvDados.SelectedItems(0).SubItems(3).Text
+            txtEmail.Text = lsvDados.SelectedItems(0).SubItems(4).Text
+
+
+        End If
+    End Sub
 End Class
