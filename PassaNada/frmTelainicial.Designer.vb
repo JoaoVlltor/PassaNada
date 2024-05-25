@@ -32,8 +32,11 @@ Partial Class frmTelaInicial
         Me.btnHistorico = New System.Windows.Forms.Button()
         Me.btnMoradores = New System.Windows.Forms.Button()
         Me.BtnVisitantes = New System.Windows.Forms.Button()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.ToolStripUsuario = New System.Windows.Forms.ToolStripStatusLabel()
         Me.MenuStrip2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip2
@@ -81,9 +84,9 @@ Partial Class frmTelaInicial
         '
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox1.Location = New System.Drawing.Point(266, 35)
+        Me.PictureBox1.Location = New System.Drawing.Point(266, 42)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(534, 415)
+        Me.PictureBox1.Size = New System.Drawing.Size(534, 346)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
@@ -124,11 +127,27 @@ Partial Class frmTelaInicial
         Me.BtnVisitantes.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BtnVisitantes.UseVisualStyleBackColor = True
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripUsuario})
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 428)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(800, 22)
+        Me.StatusStrip1.TabIndex = 13
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'ToolStripUsuario
+        '
+        Me.ToolStripUsuario.Name = "ToolStripUsuario"
+        Me.ToolStripUsuario.Size = New System.Drawing.Size(119, 17)
+        Me.ToolStripUsuario.Text = "ToolStripStatusLabel1"
+        '
         'frmTelaInicial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnHistorico)
@@ -141,6 +160,8 @@ Partial Class frmTelaInicial
         Me.MenuStrip2.ResumeLayout(False)
         Me.MenuStrip2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -154,4 +175,6 @@ Partial Class frmTelaInicial
     Friend WithEvents btnHistorico As Button
     Friend WithEvents btnMoradores As Button
     Friend WithEvents BtnVisitantes As Button
+    Friend WithEvents StatusStrip1 As StatusStrip
+    Friend WithEvents ToolStripUsuario As ToolStripStatusLabel
 End Class
