@@ -30,8 +30,6 @@ Partial Class frmMoradores
         Me.lblBuscar = New System.Windows.Forms.Label()
         Me.lblEstado = New System.Windows.Forms.Label()
         Me.cmbEstado = New System.Windows.Forms.ComboBox()
-        Me.txtCep = New System.Windows.Forms.MaskedTextBox()
-        Me.lblCep = New System.Windows.Forms.Label()
         Me.txtCidade = New System.Windows.Forms.MaskedTextBox()
         Me.lblCidade = New System.Windows.Forms.Label()
         Me.txtBairro = New System.Windows.Forms.MaskedTextBox()
@@ -95,7 +93,7 @@ Partial Class frmMoradores
         '
         'txtBuscar
         '
-        Me.txtBuscar.Location = New System.Drawing.Point(514, 250)
+        Me.txtBuscar.Location = New System.Drawing.Point(527, 247)
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(179, 22)
         Me.txtBuscar.TabIndex = 58
@@ -104,7 +102,7 @@ Partial Class frmMoradores
         '
         Me.lblBuscar.AutoSize = True
         Me.lblBuscar.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBuscar.Location = New System.Drawing.Point(511, 232)
+        Me.lblBuscar.Location = New System.Drawing.Point(524, 229)
         Me.lblBuscar.Name = "lblBuscar"
         Me.lblBuscar.Size = New System.Drawing.Size(45, 15)
         Me.lblBuscar.TabIndex = 57
@@ -114,7 +112,7 @@ Partial Class frmMoradores
         '
         Me.lblEstado.AutoSize = True
         Me.lblEstado.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEstado.Location = New System.Drawing.Point(511, 177)
+        Me.lblEstado.Location = New System.Drawing.Point(642, 177)
         Me.lblEstado.Name = "lblEstado"
         Me.lblEstado.Size = New System.Drawing.Size(45, 15)
         Me.lblEstado.TabIndex = 56
@@ -124,35 +122,17 @@ Partial Class frmMoradores
         '
         Me.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbEstado.FormattingEnabled = True
-        Me.cmbEstado.Items.AddRange(New Object() {"AC, Acre", "AL, Alagoas", "AP, Amapá", "AM, Amazonas", "BA, Bahia", "CE, Ceará", "DF, Distrito Federal", "ES, Espirito Santo", "GO, Goiás", "MA, Maranhão", "MS, Mato Grosso do Sul", "MT, Mato Grosso", "MG, Minas Gerais", "PA, Pará", "PB, Paraíba", "PR, Paraná", "PE, Pernambuco", "PI, Piauí", "RJ, Rio de Janeiro", "RN, Rio Grande do Norte", "RS, Rio Grande do Sul", "RO, Rondônia", "RR, Roraima", "SC, Santa Catarina", "SP, São Paulo", "SE, Sergipe", "TO, Tocantins"})
-        Me.cmbEstado.Location = New System.Drawing.Point(514, 195)
+        Me.cmbEstado.Items.AddRange(New Object() {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MS", "MT", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"})
+        Me.cmbEstado.Location = New System.Drawing.Point(645, 195)
         Me.cmbEstado.Name = "cmbEstado"
         Me.cmbEstado.Size = New System.Drawing.Size(142, 21)
         Me.cmbEstado.TabIndex = 55
-        '
-        'txtCep
-        '
-        Me.txtCep.Location = New System.Drawing.Point(662, 195)
-        Me.txtCep.Mask = "00000-000"
-        Me.txtCep.Name = "txtCep"
-        Me.txtCep.Size = New System.Drawing.Size(125, 22)
-        Me.txtCep.TabIndex = 54
-        '
-        'lblCep
-        '
-        Me.lblCep.AutoSize = True
-        Me.lblCep.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCep.Location = New System.Drawing.Point(659, 177)
-        Me.lblCep.Name = "lblCep"
-        Me.lblCep.Size = New System.Drawing.Size(30, 15)
-        Me.lblCep.TabIndex = 53
-        Me.lblCep.Text = "CEP:"
         '
         'txtCidade
         '
         Me.txtCidade.Location = New System.Drawing.Point(311, 195)
         Me.txtCidade.Name = "txtCidade"
-        Me.txtCidade.Size = New System.Drawing.Size(197, 22)
+        Me.txtCidade.Size = New System.Drawing.Size(328, 22)
         Me.txtCidade.TabIndex = 52
         '
         'lblCidade
@@ -404,8 +384,6 @@ Partial Class frmMoradores
         Me.Controls.Add(Me.lblBuscar)
         Me.Controls.Add(Me.lblEstado)
         Me.Controls.Add(Me.cmbEstado)
-        Me.Controls.Add(Me.txtCep)
-        Me.Controls.Add(Me.lblCep)
         Me.Controls.Add(Me.txtCidade)
         Me.Controls.Add(Me.lblCidade)
         Me.Controls.Add(Me.txtBairro)
@@ -446,8 +424,6 @@ Partial Class frmMoradores
     Friend WithEvents lblBuscar As Label
     Friend WithEvents lblEstado As Label
     Friend WithEvents cmbEstado As ComboBox
-    Friend WithEvents txtCep As MaskedTextBox
-    Friend WithEvents lblCep As Label
     Friend WithEvents txtCidade As MaskedTextBox
     Friend WithEvents lblCidade As Label
     Friend WithEvents txtBairro As MaskedTextBox
