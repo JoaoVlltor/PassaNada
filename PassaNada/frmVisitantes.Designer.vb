@@ -25,53 +25,53 @@ Partial Class frmVisitantes
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmVisitantes))
         Me.gbVisitante = New System.Windows.Forms.GroupBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.MaskedTextBox7 = New System.Windows.Forms.MaskedTextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.txtVeiculo = New System.Windows.Forms.MaskedTextBox()
+        Me.lblVeiculo = New System.Windows.Forms.Label()
+        Me.imgFoto = New System.Windows.Forms.PictureBox()
         Me.lblCod = New System.Windows.Forms.Label()
         Me.txtCod = New System.Windows.Forms.MaskedTextBox()
         Me.txtWhatsapp = New System.Windows.Forms.MaskedTextBox()
         Me.txtCpf = New System.Windows.Forms.MaskedTextBox()
-        Me.txtResponsavel = New System.Windows.Forms.MaskedTextBox()
+        Me.txtVisitante = New System.Windows.Forms.MaskedTextBox()
         Me.lblWhatsapp = New System.Windows.Forms.Label()
         Me.lblCpf = New System.Windows.Forms.Label()
-        Me.lblResponsavel = New System.Windows.Forms.Label()
+        Me.lblVisitante = New System.Windows.Forms.Label()
         Me.gbMoradores = New System.Windows.Forms.GroupBox()
-        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtWhatsappM = New System.Windows.Forms.MaskedTextBox()
+        Me.lblWhatsappM = New System.Windows.Forms.Label()
         Me.txtCep = New System.Windows.Forms.MaskedTextBox()
         Me.lblCep = New System.Windows.Forms.Label()
-        Me.MaskedTextBox4 = New System.Windows.Forms.MaskedTextBox()
+        Me.txtCidade = New System.Windows.Forms.MaskedTextBox()
         Me.lblCidade = New System.Windows.Forms.Label()
-        Me.MaskedTextBox5 = New System.Windows.Forms.MaskedTextBox()
+        Me.txtBairro = New System.Windows.Forms.MaskedTextBox()
         Me.lblBairro = New System.Windows.Forms.Label()
-        Me.MaskedTextBox6 = New System.Windows.Forms.MaskedTextBox()
+        Me.txtComplemento = New System.Windows.Forms.MaskedTextBox()
         Me.lblComplemento = New System.Windows.Forms.Label()
         Me.txtNumero = New System.Windows.Forms.MaskedTextBox()
         Me.lblNumero = New System.Windows.Forms.Label()
         Me.txtLogradouro = New System.Windows.Forms.MaskedTextBox()
         Me.lblLogradouro = New System.Windows.Forms.Label()
-        Me.MaskedTextBox2 = New System.Windows.Forms.MaskedTextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblMorador = New System.Windows.Forms.Label()
+        Me.cmbMorador = New System.Windows.Forms.ComboBox()
         Me.gbVisitante.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgFoto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbMoradores.SuspendLayout()
         Me.SuspendLayout()
         '
         'gbVisitante
         '
         Me.gbVisitante.Controls.Add(Me.Button1)
-        Me.gbVisitante.Controls.Add(Me.MaskedTextBox7)
-        Me.gbVisitante.Controls.Add(Me.Label4)
-        Me.gbVisitante.Controls.Add(Me.PictureBox1)
+        Me.gbVisitante.Controls.Add(Me.txtVeiculo)
+        Me.gbVisitante.Controls.Add(Me.lblVeiculo)
+        Me.gbVisitante.Controls.Add(Me.imgFoto)
         Me.gbVisitante.Controls.Add(Me.lblCod)
         Me.gbVisitante.Controls.Add(Me.txtCod)
         Me.gbVisitante.Controls.Add(Me.txtWhatsapp)
         Me.gbVisitante.Controls.Add(Me.txtCpf)
-        Me.gbVisitante.Controls.Add(Me.txtResponsavel)
+        Me.gbVisitante.Controls.Add(Me.txtVisitante)
         Me.gbVisitante.Controls.Add(Me.lblWhatsapp)
         Me.gbVisitante.Controls.Add(Me.lblCpf)
-        Me.gbVisitante.Controls.Add(Me.lblResponsavel)
+        Me.gbVisitante.Controls.Add(Me.lblVisitante)
         Me.gbVisitante.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbVisitante.Location = New System.Drawing.Point(12, 12)
         Me.gbVisitante.Name = "gbVisitante"
@@ -89,32 +89,32 @@ Partial Class frmVisitantes
         Me.Button1.Text = "Foto"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'MaskedTextBox7
+        'txtVeiculo
         '
-        Me.MaskedTextBox7.Location = New System.Drawing.Point(199, 102)
-        Me.MaskedTextBox7.Name = "MaskedTextBox7"
-        Me.MaskedTextBox7.Size = New System.Drawing.Size(203, 22)
-        Me.MaskedTextBox7.TabIndex = 72
+        Me.txtVeiculo.Location = New System.Drawing.Point(199, 102)
+        Me.txtVeiculo.Name = "txtVeiculo"
+        Me.txtVeiculo.Size = New System.Drawing.Size(203, 22)
+        Me.txtVeiculo.TabIndex = 72
         '
-        'Label4
+        'lblVeiculo
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(196, 84)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(49, 15)
-        Me.Label4.TabIndex = 71
-        Me.Label4.Text = "Veiculo:"
+        Me.lblVeiculo.AutoSize = True
+        Me.lblVeiculo.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblVeiculo.Location = New System.Drawing.Point(196, 84)
+        Me.lblVeiculo.Name = "lblVeiculo"
+        Me.lblVeiculo.Size = New System.Drawing.Size(49, 15)
+        Me.lblVeiculo.TabIndex = 71
+        Me.lblVeiculo.Text = "Veiculo:"
         '
-        'PictureBox1
+        'imgFoto
         '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(19, 19)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(142, 143)
-        Me.PictureBox1.TabIndex = 70
-        Me.PictureBox1.TabStop = False
+        Me.imgFoto.BackgroundImage = CType(resources.GetObject("imgFoto.BackgroundImage"), System.Drawing.Image)
+        Me.imgFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.imgFoto.Location = New System.Drawing.Point(19, 19)
+        Me.imgFoto.Name = "imgFoto"
+        Me.imgFoto.Size = New System.Drawing.Size(142, 143)
+        Me.imgFoto.TabIndex = 70
+        Me.imgFoto.TabStop = False
         '
         'lblCod
         '
@@ -150,12 +150,12 @@ Partial Class frmVisitantes
         Me.txtCpf.Size = New System.Drawing.Size(135, 22)
         Me.txtCpf.TabIndex = 66
         '
-        'txtResponsavel
+        'txtVisitante
         '
-        Me.txtResponsavel.Location = New System.Drawing.Point(295, 59)
-        Me.txtResponsavel.Name = "txtResponsavel"
-        Me.txtResponsavel.Size = New System.Drawing.Size(203, 22)
-        Me.txtResponsavel.TabIndex = 65
+        Me.txtVisitante.Location = New System.Drawing.Point(295, 59)
+        Me.txtVisitante.Name = "txtVisitante"
+        Me.txtVisitante.Size = New System.Drawing.Size(203, 22)
+        Me.txtVisitante.TabIndex = 65
         '
         'lblWhatsapp
         '
@@ -177,34 +177,34 @@ Partial Class frmVisitantes
         Me.lblCpf.TabIndex = 63
         Me.lblCpf.Text = "CPF:"
         '
-        'lblResponsavel
+        'lblVisitante
         '
-        Me.lblResponsavel.AutoSize = True
-        Me.lblResponsavel.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblResponsavel.Location = New System.Drawing.Point(292, 41)
-        Me.lblResponsavel.Name = "lblResponsavel"
-        Me.lblResponsavel.Size = New System.Drawing.Size(56, 15)
-        Me.lblResponsavel.TabIndex = 62
-        Me.lblResponsavel.Text = "Visitante:"
+        Me.lblVisitante.AutoSize = True
+        Me.lblVisitante.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblVisitante.Location = New System.Drawing.Point(292, 41)
+        Me.lblVisitante.Name = "lblVisitante"
+        Me.lblVisitante.Size = New System.Drawing.Size(56, 15)
+        Me.lblVisitante.TabIndex = 62
+        Me.lblVisitante.Text = "Visitante:"
         '
         'gbMoradores
         '
-        Me.gbMoradores.Controls.Add(Me.MaskedTextBox1)
-        Me.gbMoradores.Controls.Add(Me.Label1)
+        Me.gbMoradores.Controls.Add(Me.cmbMorador)
+        Me.gbMoradores.Controls.Add(Me.txtWhatsappM)
+        Me.gbMoradores.Controls.Add(Me.lblWhatsappM)
         Me.gbMoradores.Controls.Add(Me.txtCep)
         Me.gbMoradores.Controls.Add(Me.lblCep)
-        Me.gbMoradores.Controls.Add(Me.MaskedTextBox4)
+        Me.gbMoradores.Controls.Add(Me.txtCidade)
         Me.gbMoradores.Controls.Add(Me.lblCidade)
-        Me.gbMoradores.Controls.Add(Me.MaskedTextBox5)
+        Me.gbMoradores.Controls.Add(Me.txtBairro)
         Me.gbMoradores.Controls.Add(Me.lblBairro)
-        Me.gbMoradores.Controls.Add(Me.MaskedTextBox6)
+        Me.gbMoradores.Controls.Add(Me.txtComplemento)
         Me.gbMoradores.Controls.Add(Me.lblComplemento)
         Me.gbMoradores.Controls.Add(Me.txtNumero)
         Me.gbMoradores.Controls.Add(Me.lblNumero)
         Me.gbMoradores.Controls.Add(Me.txtLogradouro)
         Me.gbMoradores.Controls.Add(Me.lblLogradouro)
-        Me.gbMoradores.Controls.Add(Me.MaskedTextBox2)
-        Me.gbMoradores.Controls.Add(Me.Label2)
+        Me.gbMoradores.Controls.Add(Me.lblMorador)
         Me.gbMoradores.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbMoradores.Location = New System.Drawing.Point(12, 222)
         Me.gbMoradores.Name = "gbMoradores"
@@ -213,24 +213,24 @@ Partial Class frmVisitantes
         Me.gbMoradores.TabStop = False
         Me.gbMoradores.Text = "Dados Morador:"
         '
-        'MaskedTextBox1
+        'txtWhatsappM
         '
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(228, 35)
-        Me.MaskedTextBox1.Mask = "(00)0,000-0000"
-        Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.ReadOnly = True
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(99, 22)
-        Me.MaskedTextBox1.TabIndex = 75
+        Me.txtWhatsappM.Location = New System.Drawing.Point(228, 35)
+        Me.txtWhatsappM.Mask = "(00)0,000-0000"
+        Me.txtWhatsappM.Name = "txtWhatsappM"
+        Me.txtWhatsappM.ReadOnly = True
+        Me.txtWhatsappM.Size = New System.Drawing.Size(99, 22)
+        Me.txtWhatsappM.TabIndex = 75
         '
-        'Label1
+        'lblWhatsappM
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(225, 17)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(64, 15)
-        Me.Label1.TabIndex = 74
-        Me.Label1.Text = "Whatsapp:"
+        Me.lblWhatsappM.AutoSize = True
+        Me.lblWhatsappM.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWhatsappM.Location = New System.Drawing.Point(225, 17)
+        Me.lblWhatsappM.Name = "lblWhatsappM"
+        Me.lblWhatsappM.Size = New System.Drawing.Size(64, 15)
+        Me.lblWhatsappM.TabIndex = 74
+        Me.lblWhatsappM.Text = "Whatsapp:"
         '
         'txtCep
         '
@@ -251,13 +251,13 @@ Partial Class frmVisitantes
         Me.lblCep.TabIndex = 72
         Me.lblCep.Text = "CEP:"
         '
-        'MaskedTextBox4
+        'txtCidade
         '
-        Me.MaskedTextBox4.Location = New System.Drawing.Point(19, 93)
-        Me.MaskedTextBox4.Name = "MaskedTextBox4"
-        Me.MaskedTextBox4.ReadOnly = True
-        Me.MaskedTextBox4.Size = New System.Drawing.Size(197, 22)
-        Me.MaskedTextBox4.TabIndex = 71
+        Me.txtCidade.Location = New System.Drawing.Point(19, 93)
+        Me.txtCidade.Name = "txtCidade"
+        Me.txtCidade.ReadOnly = True
+        Me.txtCidade.Size = New System.Drawing.Size(197, 22)
+        Me.txtCidade.TabIndex = 71
         '
         'lblCidade
         '
@@ -269,13 +269,13 @@ Partial Class frmVisitantes
         Me.lblCidade.TabIndex = 70
         Me.lblCidade.Text = "Cidade:"
         '
-        'MaskedTextBox5
+        'txtBairro
         '
-        Me.MaskedTextBox5.Location = New System.Drawing.Point(558, 93)
-        Me.MaskedTextBox5.Name = "MaskedTextBox5"
-        Me.MaskedTextBox5.ReadOnly = True
-        Me.MaskedTextBox5.Size = New System.Drawing.Size(202, 22)
-        Me.MaskedTextBox5.TabIndex = 69
+        Me.txtBairro.Location = New System.Drawing.Point(558, 93)
+        Me.txtBairro.Name = "txtBairro"
+        Me.txtBairro.ReadOnly = True
+        Me.txtBairro.Size = New System.Drawing.Size(202, 22)
+        Me.txtBairro.TabIndex = 69
         '
         'lblBairro
         '
@@ -287,13 +287,13 @@ Partial Class frmVisitantes
         Me.lblBairro.TabIndex = 68
         Me.lblBairro.Text = "Bairro:"
         '
-        'MaskedTextBox6
+        'txtComplemento
         '
-        Me.MaskedTextBox6.Location = New System.Drawing.Point(222, 93)
-        Me.MaskedTextBox6.Name = "MaskedTextBox6"
-        Me.MaskedTextBox6.ReadOnly = True
-        Me.MaskedTextBox6.Size = New System.Drawing.Size(330, 22)
-        Me.MaskedTextBox6.TabIndex = 67
+        Me.txtComplemento.Location = New System.Drawing.Point(222, 93)
+        Me.txtComplemento.Name = "txtComplemento"
+        Me.txtComplemento.ReadOnly = True
+        Me.txtComplemento.Size = New System.Drawing.Size(330, 22)
+        Me.txtComplemento.TabIndex = 67
         '
         'lblComplemento
         '
@@ -341,22 +341,23 @@ Partial Class frmVisitantes
         Me.lblLogradouro.TabIndex = 45
         Me.lblLogradouro.Text = "Logradouro:"
         '
-        'MaskedTextBox2
+        'lblMorador
         '
-        Me.MaskedTextBox2.Location = New System.Drawing.Point(19, 35)
-        Me.MaskedTextBox2.Name = "MaskedTextBox2"
-        Me.MaskedTextBox2.Size = New System.Drawing.Size(203, 22)
-        Me.MaskedTextBox2.TabIndex = 43
+        Me.lblMorador.AutoSize = True
+        Me.lblMorador.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMorador.Location = New System.Drawing.Point(16, 17)
+        Me.lblMorador.Name = "lblMorador"
+        Me.lblMorador.Size = New System.Drawing.Size(56, 15)
+        Me.lblMorador.TabIndex = 42
+        Me.lblMorador.Text = "Morador:"
         '
-        'Label2
+        'cmbMorador
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(16, 17)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(56, 15)
-        Me.Label2.TabIndex = 42
-        Me.Label2.Text = "Morador:"
+        Me.cmbMorador.FormattingEnabled = True
+        Me.cmbMorador.Location = New System.Drawing.Point(19, 35)
+        Me.cmbMorador.Name = "cmbMorador"
+        Me.cmbMorador.Size = New System.Drawing.Size(197, 21)
+        Me.cmbMorador.TabIndex = 76
         '
         'frmVisitantes
         '
@@ -371,7 +372,7 @@ Partial Class frmVisitantes
         Me.Text = "PassaNada | Visitantes"
         Me.gbVisitante.ResumeLayout(False)
         Me.gbVisitante.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgFoto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbMoradores.ResumeLayout(False)
         Me.gbMoradores.PerformLayout()
         Me.ResumeLayout(False)
@@ -380,32 +381,32 @@ Partial Class frmVisitantes
 
     Friend WithEvents gbVisitante As GroupBox
     Friend WithEvents gbMoradores As GroupBox
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents imgFoto As PictureBox
     Friend WithEvents lblCod As Label
     Friend WithEvents txtCod As MaskedTextBox
     Friend WithEvents txtWhatsapp As MaskedTextBox
     Friend WithEvents txtCpf As MaskedTextBox
-    Friend WithEvents txtResponsavel As MaskedTextBox
+    Friend WithEvents txtVisitante As MaskedTextBox
     Friend WithEvents lblWhatsapp As Label
     Friend WithEvents lblCpf As Label
-    Friend WithEvents lblResponsavel As Label
-    Friend WithEvents MaskedTextBox2 As MaskedTextBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lblVisitante As Label
+    Friend WithEvents lblMorador As Label
     Friend WithEvents txtLogradouro As MaskedTextBox
     Friend WithEvents lblLogradouro As Label
-    Friend WithEvents MaskedTextBox7 As MaskedTextBox
-    Friend WithEvents Label4 As Label
+    Friend WithEvents txtVeiculo As MaskedTextBox
+    Friend WithEvents lblVeiculo As Label
     Friend WithEvents txtCep As MaskedTextBox
     Friend WithEvents lblCep As Label
-    Friend WithEvents MaskedTextBox4 As MaskedTextBox
+    Friend WithEvents txtCidade As MaskedTextBox
     Friend WithEvents lblCidade As Label
-    Friend WithEvents MaskedTextBox5 As MaskedTextBox
+    Friend WithEvents txtBairro As MaskedTextBox
     Friend WithEvents lblBairro As Label
-    Friend WithEvents MaskedTextBox6 As MaskedTextBox
+    Friend WithEvents txtComplemento As MaskedTextBox
     Friend WithEvents lblComplemento As Label
     Friend WithEvents txtNumero As MaskedTextBox
     Friend WithEvents lblNumero As Label
-    Friend WithEvents MaskedTextBox1 As MaskedTextBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents txtWhatsappM As MaskedTextBox
+    Friend WithEvents lblWhatsappM As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents cmbMorador As ComboBox
 End Class
