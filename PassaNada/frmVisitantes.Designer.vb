@@ -37,6 +37,7 @@ Partial Class frmVisitantes
         Me.lblCpf = New System.Windows.Forms.Label()
         Me.lblVisitante = New System.Windows.Forms.Label()
         Me.gbMoradores = New System.Windows.Forms.GroupBox()
+        Me.cmbMorador = New System.Windows.Forms.ComboBox()
         Me.txtWhatsappM = New System.Windows.Forms.MaskedTextBox()
         Me.lblWhatsappM = New System.Windows.Forms.Label()
         Me.txtCep = New System.Windows.Forms.MaskedTextBox()
@@ -52,10 +53,15 @@ Partial Class frmVisitantes
         Me.txtLogradouro = New System.Windows.Forms.MaskedTextBox()
         Me.lblLogradouro = New System.Windows.Forms.Label()
         Me.lblMorador = New System.Windows.Forms.Label()
-        Me.cmbMorador = New System.Windows.Forms.ComboBox()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.mnNovo = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnSalvar = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnExcluir = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FecharToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.gbVisitante.SuspendLayout()
         CType(Me.imgFoto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbMoradores.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'gbVisitante
@@ -73,9 +79,9 @@ Partial Class frmVisitantes
         Me.gbVisitante.Controls.Add(Me.lblCpf)
         Me.gbVisitante.Controls.Add(Me.lblVisitante)
         Me.gbVisitante.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbVisitante.Location = New System.Drawing.Point(12, 12)
+        Me.gbVisitante.Location = New System.Drawing.Point(12, 27)
         Me.gbVisitante.Name = "gbVisitante"
-        Me.gbVisitante.Size = New System.Drawing.Size(775, 204)
+        Me.gbVisitante.Size = New System.Drawing.Size(775, 216)
         Me.gbVisitante.TabIndex = 0
         Me.gbVisitante.TabStop = False
         Me.gbVisitante.Text = "Dados Visitante:"
@@ -92,6 +98,7 @@ Partial Class frmVisitantes
         'txtVeiculo
         '
         Me.txtVeiculo.Location = New System.Drawing.Point(199, 102)
+        Me.txtVeiculo.Mask = "000-0000"
         Me.txtVeiculo.Name = "txtVeiculo"
         Me.txtVeiculo.Size = New System.Drawing.Size(203, 22)
         Me.txtVeiculo.TabIndex = 72
@@ -137,7 +144,7 @@ Partial Class frmVisitantes
         'txtWhatsapp
         '
         Me.txtWhatsapp.Location = New System.Drawing.Point(648, 59)
-        Me.txtWhatsapp.Mask = "(00)0,000-0000"
+        Me.txtWhatsapp.Mask = "(00)0000-00000"
         Me.txtWhatsapp.Name = "txtWhatsapp"
         Me.txtWhatsapp.Size = New System.Drawing.Size(96, 22)
         Me.txtWhatsapp.TabIndex = 67
@@ -206,12 +213,20 @@ Partial Class frmVisitantes
         Me.gbMoradores.Controls.Add(Me.lblLogradouro)
         Me.gbMoradores.Controls.Add(Me.lblMorador)
         Me.gbMoradores.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.gbMoradores.Location = New System.Drawing.Point(12, 222)
+        Me.gbMoradores.Location = New System.Drawing.Point(12, 249)
         Me.gbMoradores.Name = "gbMoradores"
-        Me.gbMoradores.Size = New System.Drawing.Size(775, 216)
+        Me.gbMoradores.Size = New System.Drawing.Size(775, 189)
         Me.gbMoradores.TabIndex = 1
         Me.gbMoradores.TabStop = False
         Me.gbMoradores.Text = "Dados Morador:"
+        '
+        'cmbMorador
+        '
+        Me.cmbMorador.FormattingEnabled = True
+        Me.cmbMorador.Location = New System.Drawing.Point(19, 35)
+        Me.cmbMorador.Name = "cmbMorador"
+        Me.cmbMorador.Size = New System.Drawing.Size(197, 21)
+        Me.cmbMorador.TabIndex = 76
         '
         'txtWhatsappM
         '
@@ -351,19 +366,49 @@ Partial Class frmVisitantes
         Me.lblMorador.TabIndex = 42
         Me.lblMorador.Text = "Morador:"
         '
-        'cmbMorador
+        'MenuStrip1
         '
-        Me.cmbMorador.FormattingEnabled = True
-        Me.cmbMorador.Location = New System.Drawing.Point(19, 35)
-        Me.cmbMorador.Name = "cmbMorador"
-        Me.cmbMorador.Size = New System.Drawing.Size(197, 21)
-        Me.cmbMorador.TabIndex = 76
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnNovo, Me.mnSalvar, Me.mnExcluir, Me.FecharToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.TabIndex = 63
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'mnNovo
+        '
+        Me.mnNovo.Image = CType(resources.GetObject("mnNovo.Image"), System.Drawing.Image)
+        Me.mnNovo.Name = "mnNovo"
+        Me.mnNovo.Size = New System.Drawing.Size(64, 20)
+        Me.mnNovo.Text = "&Novo"
+        '
+        'mnSalvar
+        '
+        Me.mnSalvar.Image = CType(resources.GetObject("mnSalvar.Image"), System.Drawing.Image)
+        Me.mnSalvar.Name = "mnSalvar"
+        Me.mnSalvar.Size = New System.Drawing.Size(66, 20)
+        Me.mnSalvar.Text = "&Salvar"
+        '
+        'mnExcluir
+        '
+        Me.mnExcluir.Image = CType(resources.GetObject("mnExcluir.Image"), System.Drawing.Image)
+        Me.mnExcluir.Name = "mnExcluir"
+        Me.mnExcluir.Size = New System.Drawing.Size(70, 20)
+        Me.mnExcluir.Text = "&Excluir"
+        '
+        'FecharToolStripMenuItem
+        '
+        Me.FecharToolStripMenuItem.Image = CType(resources.GetObject("FecharToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.FecharToolStripMenuItem.Name = "FecharToolStripMenuItem"
+        Me.FecharToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
+        Me.FecharToolStripMenuItem.Text = "&Fechar"
         '
         'frmVisitantes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.gbMoradores)
         Me.Controls.Add(Me.gbVisitante)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -375,7 +420,10 @@ Partial Class frmVisitantes
         CType(Me.imgFoto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.gbMoradores.ResumeLayout(False)
         Me.gbMoradores.PerformLayout()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -409,4 +457,9 @@ Partial Class frmVisitantes
     Friend WithEvents lblWhatsappM As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents cmbMorador As ComboBox
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents mnNovo As ToolStripMenuItem
+    Friend WithEvents mnSalvar As ToolStripMenuItem
+    Friend WithEvents mnExcluir As ToolStripMenuItem
+    Friend WithEvents FecharToolStripMenuItem As ToolStripMenuItem
 End Class
