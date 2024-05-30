@@ -49,15 +49,11 @@
     End Sub
 
     Private Sub lsvDados_DoubleClick(sender As Object, e As EventArgs) Handles lsvDados.DoubleClick
-        If lsvDados.SelectedIndices(0) = "" Then
-            txtCod.Text = lsvDados.SelectedItems(0).Text
-            txtResponsavel.Text = lsvDados.SelectedItems(0).SubItems(1).Text
-            txtCpf.Text = lsvDados.SelectedItems(0).SubItems(2).Text
-            txtWhatsapp.Text = lsvDados.SelectedItems(0).SubItems(3).Text
-            txtEmail.Text = lsvDados.SelectedItems(0).SubItems(4).Text
-
-
-
+        txtCod.Text = lsvDados.SelectedItems(0).Text
+        txtResponsavel.Text = lsvDados.SelectedItems(0).SubItems(1).Text
+        txtCpf.Text = lsvDados.SelectedItems(0).SubItems(2).Text
+        txtWhatsapp.Text = lsvDados.SelectedItems(0).SubItems(3).Text
+        txtEmail.Text = lsvDados.SelectedItems(0).SubItems(4).Text
     End Sub
 
     Private Sub listarDados()
