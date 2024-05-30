@@ -52,7 +52,7 @@ Partial Class frmMoradores
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.NovoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalvarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExcluirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnExcluir = New System.Windows.Forms.ToolStripMenuItem()
         Me.FecharToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.lsvDados = New System.Windows.Forms.ListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -295,7 +295,7 @@ Partial Class frmMoradores
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovoToolStripMenuItem, Me.SalvarToolStripMenuItem, Me.ExcluirToolStripMenuItem, Me.FecharToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovoToolStripMenuItem, Me.SalvarToolStripMenuItem, Me.mnExcluir, Me.FecharToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
@@ -316,12 +316,12 @@ Partial Class frmMoradores
         Me.SalvarToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
         Me.SalvarToolStripMenuItem.Text = "&Salvar"
         '
-        'ExcluirToolStripMenuItem
+        'mnExcluir
         '
-        Me.ExcluirToolStripMenuItem.Image = CType(resources.GetObject("ExcluirToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.ExcluirToolStripMenuItem.Name = "ExcluirToolStripMenuItem"
-        Me.ExcluirToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
-        Me.ExcluirToolStripMenuItem.Text = "&Excluir"
+        Me.mnExcluir.Image = CType(resources.GetObject("mnExcluir.Image"), System.Drawing.Image)
+        Me.mnExcluir.Name = "mnExcluir"
+        Me.mnExcluir.Size = New System.Drawing.Size(70, 20)
+        Me.mnExcluir.Text = "&Excluir"
         '
         'FecharToolStripMenuItem
         '
@@ -446,7 +446,7 @@ Partial Class frmMoradores
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents NovoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SalvarToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ExcluirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents mnExcluir As ToolStripMenuItem
     Friend WithEvents FecharToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents lsvDados As ListView
     Friend WithEvents ColumnHeader1 As ColumnHeader

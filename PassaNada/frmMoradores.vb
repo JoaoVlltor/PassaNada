@@ -99,6 +99,7 @@
             txtCidade.Text = vgRegistros("CIDADE").Value
             cmbEstado.Text = vgRegistros("ESTADO").Value
         End If
+        vgRegistros.Close()
 
     End Sub
 
@@ -140,7 +141,7 @@
         vgRegistros.Close()
     End Sub
 
-    Private Sub ExcluirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExcluirToolStripMenuItem.Click
+    Private Sub mnExcluir_Click(sender As Object, e As EventArgs) Handles mnExcluir.Click
         If txtCod.Text <> "" Then
             Dim sql As String
 
