@@ -18,7 +18,6 @@ Public Class frmVisitantes
         cmbMorador.SelectedIndex = -1
         txtWhatsappM.Clear()
         txtLogradouro.Clear()
-        txtCep.Clear()
         txtCidade.Clear()
         txtComplemento.Clear()
         txtBairro.Clear()
@@ -51,16 +50,47 @@ Public Class frmVisitantes
         Else
             Dim sql As String
             Dim id_morador As Integer = CInt(Mid(cmbMorador.Text, 1, 5))
+            Dim dataHoraAtual As DateTime = Now
+
             sql = "
-             INSERT INTO VISITANTE(VISITANTE,CPF,WHATSAPP,VEICULO,ID_MORADOR)
-             VALUES(
-             '" & txtVisitante.Text & "'
-             '" & txtCpf.Text & "'
-             '" & txtWhatsapp.Text & "'
-             '" & txtVeiculo.Text & "'
-             '" & id_morador & "'
+             INSERT INTO VISITAS (VISITANTE, CPF, WHATSAPP, VEICULO, ID_MORADOR, DATA, HORA)
+             VALUES (
+             '" & txtVisitante.Text & "',
+             '" & txtCpf.Text & "',
+             '" & txtWhatsapp.Text & "',
+             '" & txtVeiculo.Text & "',
+             '" & id_morador & "',
+             '" & Format(dataHoraAtual, "MM/dd/yyyy") & "',
+             '" & dataHoraAtual.ToShortTimeString & "'
              )
             "
+            vgDados.Execute(sql)
+
+            MsgBox("Visitante registrado com sucesso!", MsgBoxStyle.Information, "SUCESSO")
+
+            limparFormulario()
         End If
+    End Sub
+
+    Private Sub cmbMorador_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmbMorador.SelectedValueChanged
+
+        Dim id_morador As Integer = CInt(Mid(cmbMorador.Text, 1, 5))
+        Dim sql As String
+
+        sql = "SELECT WHATSAPP, LOGRADOURO, NUMERO, COMPLEMENTO, BAIRRO, CIDADE FROM MORADOR WHERE PK_MORADOR = '" & id_morador & "' "
+
+        vgRegistros.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+        vgRegistros.Open(sql, vgDados)
+
+        If vgRegistros.RecordCount > 0 Then
+            txtWhatsappM.Text = vgRegistros("WHATSAPP").Value
+            txtLogradouro.Text = vgRegistros("LOGRADOURO").Value
+            txtNumero.Text = vgRegistros("NUMERO").Value
+            txtBairro.Text = vgRegistros("BAIRRO").Value
+            txtCidade.Text = vgRegistros("CIDADE").Value
+            txtComplemento.Text = vgRegistros("COMPLEMENTO").Value
+        End If
+        vgRegistros.Close()
+
     End Sub
 End Class

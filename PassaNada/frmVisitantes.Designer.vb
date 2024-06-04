@@ -40,8 +40,6 @@ Partial Class frmVisitantes
         Me.cmbMorador = New System.Windows.Forms.ComboBox()
         Me.txtWhatsappM = New System.Windows.Forms.MaskedTextBox()
         Me.lblWhatsappM = New System.Windows.Forms.Label()
-        Me.txtCep = New System.Windows.Forms.MaskedTextBox()
-        Me.lblCep = New System.Windows.Forms.Label()
         Me.txtCidade = New System.Windows.Forms.MaskedTextBox()
         Me.lblCidade = New System.Windows.Forms.Label()
         Me.txtBairro = New System.Windows.Forms.MaskedTextBox()
@@ -98,7 +96,7 @@ Partial Class frmVisitantes
         'txtVeiculo
         '
         Me.txtVeiculo.Location = New System.Drawing.Point(199, 102)
-        Me.txtVeiculo.Mask = "000-0000"
+        Me.txtVeiculo.Mask = "AAA-0A00"
         Me.txtVeiculo.Name = "txtVeiculo"
         Me.txtVeiculo.Size = New System.Drawing.Size(203, 22)
         Me.txtVeiculo.TabIndex = 72
@@ -199,8 +197,6 @@ Partial Class frmVisitantes
         Me.gbMoradores.Controls.Add(Me.cmbMorador)
         Me.gbMoradores.Controls.Add(Me.txtWhatsappM)
         Me.gbMoradores.Controls.Add(Me.lblWhatsappM)
-        Me.gbMoradores.Controls.Add(Me.txtCep)
-        Me.gbMoradores.Controls.Add(Me.lblCep)
         Me.gbMoradores.Controls.Add(Me.txtCidade)
         Me.gbMoradores.Controls.Add(Me.lblCidade)
         Me.gbMoradores.Controls.Add(Me.txtBairro)
@@ -246,25 +242,6 @@ Partial Class frmVisitantes
         Me.lblWhatsappM.Size = New System.Drawing.Size(64, 15)
         Me.lblWhatsappM.TabIndex = 74
         Me.lblWhatsappM.Text = "Whatsapp:"
-        '
-        'txtCep
-        '
-        Me.txtCep.Location = New System.Drawing.Point(635, 35)
-        Me.txtCep.Mask = "00000-000"
-        Me.txtCep.Name = "txtCep"
-        Me.txtCep.ReadOnly = True
-        Me.txtCep.Size = New System.Drawing.Size(125, 22)
-        Me.txtCep.TabIndex = 73
-        '
-        'lblCep
-        '
-        Me.lblCep.AutoSize = True
-        Me.lblCep.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCep.Location = New System.Drawing.Point(632, 17)
-        Me.lblCep.Name = "lblCep"
-        Me.lblCep.Size = New System.Drawing.Size(30, 15)
-        Me.lblCep.TabIndex = 72
-        Me.lblCep.Text = "CEP:"
         '
         'txtCidade
         '
@@ -322,7 +299,7 @@ Partial Class frmVisitantes
         '
         'txtNumero
         '
-        Me.txtNumero.Location = New System.Drawing.Point(19, 140)
+        Me.txtNumero.Location = New System.Drawing.Point(634, 35)
         Me.txtNumero.Name = "txtNumero"
         Me.txtNumero.ReadOnly = True
         Me.txtNumero.Size = New System.Drawing.Size(135, 22)
@@ -332,7 +309,7 @@ Partial Class frmVisitantes
         '
         Me.lblNumero.AutoSize = True
         Me.lblNumero.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNumero.Location = New System.Drawing.Point(16, 122)
+        Me.lblNumero.Location = New System.Drawing.Point(631, 17)
         Me.lblNumero.Name = "lblNumero"
         Me.lblNumero.Size = New System.Drawing.Size(54, 15)
         Me.lblNumero.TabIndex = 64
@@ -443,8 +420,6 @@ Partial Class frmVisitantes
     Friend WithEvents lblLogradouro As Label
     Friend WithEvents txtVeiculo As MaskedTextBox
     Friend WithEvents lblVeiculo As Label
-    Friend WithEvents txtCep As MaskedTextBox
-    Friend WithEvents lblCep As Label
     Friend WithEvents txtCidade As MaskedTextBox
     Friend WithEvents lblCidade As Label
     Friend WithEvents txtBairro As MaskedTextBox
