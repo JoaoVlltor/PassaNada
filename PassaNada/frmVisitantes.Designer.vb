@@ -54,7 +54,6 @@ Partial Class frmVisitantes
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.mnNovo = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnSalvar = New System.Windows.Forms.ToolStripMenuItem()
-        Me.mnExcluir = New System.Windows.Forms.ToolStripMenuItem()
         Me.FecharToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.gbVisitante.SuspendLayout()
         CType(Me.imgFoto, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -96,9 +95,9 @@ Partial Class frmVisitantes
         'txtVeiculo
         '
         Me.txtVeiculo.Location = New System.Drawing.Point(199, 102)
-        Me.txtVeiculo.Mask = "AAA-0A00"
+        Me.txtVeiculo.Mask = ">LLL-0A00"
         Me.txtVeiculo.Name = "txtVeiculo"
-        Me.txtVeiculo.Size = New System.Drawing.Size(203, 22)
+        Me.txtVeiculo.Size = New System.Drawing.Size(90, 22)
         Me.txtVeiculo.TabIndex = 72
         '
         'lblVeiculo
@@ -345,7 +344,7 @@ Partial Class frmVisitantes
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnNovo, Me.mnSalvar, Me.mnExcluir, Me.FecharToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnNovo, Me.mnSalvar, Me.FecharToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
@@ -365,13 +364,6 @@ Partial Class frmVisitantes
         Me.mnSalvar.Name = "mnSalvar"
         Me.mnSalvar.Size = New System.Drawing.Size(66, 20)
         Me.mnSalvar.Text = "&Salvar"
-        '
-        'mnExcluir
-        '
-        Me.mnExcluir.Image = CType(resources.GetObject("mnExcluir.Image"), System.Drawing.Image)
-        Me.mnExcluir.Name = "mnExcluir"
-        Me.mnExcluir.Size = New System.Drawing.Size(70, 20)
-        Me.mnExcluir.Text = "&Excluir"
         '
         'FecharToolStripMenuItem
         '
@@ -435,6 +427,5 @@ Partial Class frmVisitantes
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents mnNovo As ToolStripMenuItem
     Friend WithEvents mnSalvar As ToolStripMenuItem
-    Friend WithEvents mnExcluir As ToolStripMenuItem
     Friend WithEvents FecharToolStripMenuItem As ToolStripMenuItem
 End Class

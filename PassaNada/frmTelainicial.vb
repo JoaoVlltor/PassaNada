@@ -22,7 +22,7 @@
         End If
     End Sub
 
-    Private Sub frmTelaInicial_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub btnHistorico_Click(sender As Object, e As EventArgs) Handles btnHistorico.Click
+        frmHistorico.ShowDialog()
     End Sub
 End Class

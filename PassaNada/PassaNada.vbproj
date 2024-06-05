@@ -74,6 +74,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexao.vb" />
+    <Compile Include="frmHistorico.Designer.vb">
+      <DependentUpon>frmHistorico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistorico.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmTelaLogin.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmHistorico.resx">
+      <DependentUpon>frmHistorico.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTelaLogin.resx">
       <DependentUpon>frmTelaLogin.vb</DependentUpon>
     </EmbeddedResource>

@@ -53,7 +53,7 @@ Public Class frmVisitantes
             Dim dataHoraAtual As DateTime = Now
 
             sql = "
-             INSERT INTO VISITAS (VISITANTE, CPF, WHATSAPP, VEICULO, ID_MORADOR, DATA, HORA)
+             INSERT INTO VISITAS (VISITANTE, CPF, WHATSAPP, VEICULO, FK_MORADOR, DATA, HORA)
              VALUES (
              '" & txtVisitante.Text & "',
              '" & txtCpf.Text & "',
@@ -73,24 +73,38 @@ Public Class frmVisitantes
     End Sub
 
     Private Sub cmbMorador_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmbMorador.SelectedValueChanged
+        If cmbMorador.Text <> "" Then
+            Dim id_morador As Integer = CInt(Mid(cmbMorador.Text, 1, 5))
+            Dim sql As String
 
-        Dim id_morador As Integer = CInt(Mid(cmbMorador.Text, 1, 5))
-        Dim sql As String
+            sql = "SELECT WHATSAPP, LOGRADOURO, NUMERO, COMPLEMENTO, BAIRRO, CIDADE FROM MORADOR WHERE PK_MORADOR = '" & id_morador & "' "
 
-        sql = "SELECT WHATSAPP, LOGRADOURO, NUMERO, COMPLEMENTO, BAIRRO, CIDADE FROM MORADOR WHERE PK_MORADOR = '" & id_morador & "' "
+            vgRegistros.CursorLocation = ADODB.CursorLocationEnum.adUseClient
+            vgRegistros.Open(sql, vgDados)
 
-        vgRegistros.CursorLocation = ADODB.CursorLocationEnum.adUseClient
-        vgRegistros.Open(sql, vgDados)
+            If vgRegistros.RecordCount > 0 Then
+                txtWhatsappM.Text = vgRegistros("WHATSAPP").Value
+                txtLogradouro.Text = vgRegistros("LOGRADOURO").Value
+                txtNumero.Text = vgRegistros("NUMERO").Value
+                txtBairro.Text = vgRegistros("BAIRRO").Value
+                txtCidade.Text = vgRegistros("CIDADE").Value
+                txtComplemento.Text = vgRegistros("COMPLEMENTO").Value
+            End If
+            vgRegistros.Close()
 
-        If vgRegistros.RecordCount > 0 Then
-            txtWhatsappM.Text = vgRegistros("WHATSAPP").Value
-            txtLogradouro.Text = vgRegistros("LOGRADOURO").Value
-            txtNumero.Text = vgRegistros("NUMERO").Value
-            txtBairro.Text = vgRegistros("BAIRRO").Value
-            txtCidade.Text = vgRegistros("CIDADE").Value
-            txtComplemento.Text = vgRegistros("COMPLEMENTO").Value
         End If
-        vgRegistros.Close()
 
+    End Sub
+
+    Private Sub mnNovo_Click(sender As Object, e As EventArgs) Handles mnNovo.Click
+        If MsgBox("Deseja criar um novo registro?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Novo") = MsgBoxResult.Yes Then
+            limparFormulario()
+        End If
+    End Sub
+
+    Private Sub FecharToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FecharToolStripMenuItem.Click
+        If MsgBox("Deseja realmente fechar?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Fechar") = MsgBoxResult.Yes Then
+            Me.Close()
+        End If
     End Sub
 End Class
