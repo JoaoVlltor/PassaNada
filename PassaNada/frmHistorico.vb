@@ -15,7 +15,7 @@
         Dim sql As String
 
         sql = "
-        SELECT v.PK_VISITA, (V.DATA || ' - ' || V.HORA) DATA_HORA, V.VISITANTE, V.CPF CPF_V, V.WHATSAPP, V.VEICULO,
+        SELECT v.PK_VISITA, V.DATA V.HORA DATA_HORA, V.VISITANTE, V.CPF CPF_V, V.WHATSAPP, V.VEICULO,
                M.RESPONSAVEL, M.CPF CPF_M
         FROM VISITAS V
         JOIN MORADOR M ON PK_MORADOR = FK_MORADOR
@@ -35,6 +35,7 @@
 
         If vgRegistros.RecordCount > 0 Then
             While Not vgRegistros.EOF
+                Dim dataHora As String = Format(vgRegistros("DATA").Value, "dd/MM/yyyy") & " - " & Format(vgRegistros("HORA").Value, "HH:mm")
                 Dim item As New ListViewItem
 
                 With lsvDados.Items.Add(item)
