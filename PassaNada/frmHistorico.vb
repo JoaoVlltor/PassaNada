@@ -11,11 +11,14 @@
     End Sub
 
     Private Sub listarDados()
+
         lsvDados.Items.Clear()
+
         Dim sql As String
 
-        sql = "
-        SELECT v.PK_VISITA, V.DATA V.HORA DATA_HORA, V.VISITANTE, V.CPF CPF_V, V.WHATSAPP, V.VEICULO,
+        sql =
+        "
+        SELECT V.PK_VISITA, V.DATA, V.HORA, V.VISITANTE, V.CPF CPF_V, V.WHATSAPP, V.VEICULO,
                M.RESPONSAVEL, M.CPF CPF_M
         FROM VISITAS V
         JOIN MORADOR M ON PK_MORADOR = FK_MORADOR
@@ -40,7 +43,7 @@
 
                 With lsvDados.Items.Add(item)
                     .Text = vgRegistros("PK_VISITA").Value
-                    .SubItems.Add(vgRegistros("DATA_HORA").Value)
+                    .SubItems.Add(dataHora)
                     .SubItems.Add(vgRegistros("VISITANTE").Value)
                     .SubItems.Add(vgRegistros("CPF_V").Value)
                     .SubItems.Add(vgRegistros("WHATSAPP").Value)
