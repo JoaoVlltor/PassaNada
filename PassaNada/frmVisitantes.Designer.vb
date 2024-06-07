@@ -24,7 +24,7 @@ Partial Class frmVisitantes
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmVisitantes))
         Me.gbVisitante = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnFoto = New System.Windows.Forms.Button()
         Me.txtVeiculo = New System.Windows.Forms.MaskedTextBox()
         Me.lblVeiculo = New System.Windows.Forms.Label()
         Me.imgFoto = New System.Windows.Forms.PictureBox()
@@ -63,7 +63,7 @@ Partial Class frmVisitantes
         '
         'gbVisitante
         '
-        Me.gbVisitante.Controls.Add(Me.Button1)
+        Me.gbVisitante.Controls.Add(Me.btnFoto)
         Me.gbVisitante.Controls.Add(Me.txtVeiculo)
         Me.gbVisitante.Controls.Add(Me.lblVeiculo)
         Me.gbVisitante.Controls.Add(Me.imgFoto)
@@ -83,14 +83,14 @@ Partial Class frmVisitantes
         Me.gbVisitante.TabStop = False
         Me.gbVisitante.Text = "Dados Visitante:"
         '
-        'Button1
+        'btnFoto
         '
-        Me.Button1.Location = New System.Drawing.Point(19, 168)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(142, 30)
-        Me.Button1.TabIndex = 73
-        Me.Button1.Text = "Foto"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnFoto.Location = New System.Drawing.Point(19, 168)
+        Me.btnFoto.Name = "btnFoto"
+        Me.btnFoto.Size = New System.Drawing.Size(142, 30)
+        Me.btnFoto.TabIndex = 73
+        Me.btnFoto.Text = "Foto"
+        Me.btnFoto.UseVisualStyleBackColor = True
         '
         'txtVeiculo
         '
@@ -422,7 +422,7 @@ Partial Class frmVisitantes
     Friend WithEvents lblNumero As Label
     Friend WithEvents txtWhatsappM As MaskedTextBox
     Friend WithEvents lblWhatsappM As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnFoto As Button
     Friend WithEvents cmbMorador As ComboBox
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents mnNovo As ToolStripMenuItem
